@@ -1,3 +1,5 @@
+print("I will add here my Python Exercises")
+
  -*- coding: utf-8 -*-
 
 Spyder Editor
