@@ -100,3 +100,6 @@ elif(n%12==10):
 elif(n%12==11):
     j = ((n-11)/12)
     print(j, "dozens  and no. of extra banana = 11 ")
+# Output of Q1 
+#The no. of banana = 43
+#3.0 dozens  and no. of extra banana = 7 
