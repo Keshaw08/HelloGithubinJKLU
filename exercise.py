@@ -110,3 +110,13 @@ with open('test1.txt', "w") as asn1:
     	asn1.write("This is line " + str(i) + "\n")
 with open('test1.txt', "r") as readasn1:
 	print(readasn1.read())
+
+count = 0
+with open('test2.txt', "w") as asn2:
+    with open('test1.txt', "r") as asn1:
+        for i in asn1:
+            count += 1
+            if (count <= 5):
+                asn2.write(i)
+with open('test2.txt', "r") as readasn2:
+    print(readasn2.read())
