@@ -103,3 +103,10 @@ elif(n%12==11):
 # Output of Q1 
 #The no. of banana = 43
 #3.0 dozens  and no. of extra banana = 7 
+
+
+with open('test1.txt', "w") as asn1:
+	for i in xrange(1,15):
+    	asn1.write("This is line " + str(i) + "\n")
+with open('test1.txt', "r") as readasn1:
+	print(readasn1.read())
