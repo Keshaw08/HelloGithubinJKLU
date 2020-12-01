@@ -131,3 +131,14 @@ with open('test3.txt', "w") as asn3:
                 
 with open('test3.txt', "r") as readasn3:
     print(readasn3.read())
+
+with open('test4.txt', "w") as asn4:
+    with open('test2.txt', "r") as readasn2:
+        for i in readasn2:
+            asn4.write(i)
+    with open('test3.txt', "r") as readasn3:
+        for j in readasn3:
+            asn4.write(j)
+with open('test4.txt', "r") as readasn4:
+    print(readasn4.read())
+        
