@@ -120,3 +120,14 @@ with open('test2.txt', "w") as asn2:
                 asn2.write(i)
 with open('test2.txt', "r") as readasn2:
     print(readasn2.read())
+
+count = 0 
+with open('test3.txt', "w") as asn3:
+    with open('test1.txt', "r") as asn1:
+        for i in asn1:
+            count += 1
+            if (7 <= count <= 15):
+                asn3.write(i)
+                
+with open('test3.txt', "r") as readasn3:
+    print(readasn3.read())
