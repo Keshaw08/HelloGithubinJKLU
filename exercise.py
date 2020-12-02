@@ -161,3 +161,22 @@ h = int(input("what is the height = "))
 
 z = ((x + y)/2)*h
 print(z)
+
+'''Consider a triangle with sides of length 3, 7, and 9. The law of cosines states that
+given three sides of a triangle (a, b, and c ) and the angle C between sides a and b:
+c 2 = a2 + b2 − 2*a*b*c os (C). Write Python code to calculate the three angles in the
+triangle.
+'''
+import math
+
+a = int(input("lenght of a = "))
+b = int(input("lenght of b = "))
+c = int(input("lenght of c = "))
+
+C = math.cos(1)
+
+angleToDegrees = math.degrees(C)
+
+z =  - c**2 + a**2 + b**2 - 2*a*b*math.cos(C)
+
+print(math.cos(C))
