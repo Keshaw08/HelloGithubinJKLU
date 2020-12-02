@@ -237,3 +237,22 @@ I = (35 * interceptions) - 2.375
 passrating = ((C + Y + T + I )/6)*100
 
 print(passrating)
+
+'''Body mass index (BMI) is a number calculated from a person’s weight and height.
+According to the Centers for Disease Control and Prevention, the BMI is a fairly
+reliable indicator of body fatness for most people. BMI does not measure body fat
+directly, but research has shown that BMI correlates to direct measures of body fat,
+such as underwater weighing and dual-energy X-ray absorptiometry. The formula for
+BMI is
+we ig ht/heig ht2
+where weight is in kilograms and height is in meters.
+(a) Write a program that prompts for metric weight and height and outputs the BMI.
+(b) Write a program that prompts for weight in pounds and height in inches, converts
+the values to metric, and then calculates the BMI.'''
+
+weight = int(input("what is weight = "))
+height = int(input("what is height =  "))
+
+BMI = weight/height**2
+
+print(BMI)
