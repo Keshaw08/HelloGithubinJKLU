@@ -180,3 +180,25 @@ angleToDegrees = math.degrees(C)
 z =  - c**2 + a**2 + b**2 - 2*a*b*math.cos(C)
 
 print(math.cos(C))
+
+'''The radius and mass of the Earth are r = 6378×103 meters andm1 = 5.9742×1024 kg,
+respectively. Mr. Jones has amass of X kg. Prompt the user to input X and then calculate
+the gravitational force (F ) and acceleration due to gravity ( g ) caused by the gravitational
+force exerted on him by the Earth. Remember, F = G(m1)(m2)/(r 2) and F = mg .
+Let the universal gravitational constant G = 6.67300 × 10−11 (in units of m3kg−1s −2
+assuming the MKS [meter-kilogram-second] system). Check that the resulting value of
+g is close to 9.8m/s2.
+'''
+
+r = 6378 * 10**3
+m1 = 5.9742*10**24
+G = 6.67300*10**(-11)
+m2 = int(input("Mr. Jones mass = "))
+
+F = (G*m1*m2)/r**2 
+
+print(F)
+
+g = F/m2
+
+print(g)
