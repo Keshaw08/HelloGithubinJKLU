@@ -212,3 +212,28 @@ to use it. In the end, your task is to do the following:
 from datetime import date
 today = date.today()
 print("Today's date is : ", today)
+
+'''In football, there is a statistic for quarterbacks called the passer rating. To calculate the
+passer rating, you need five inputs: pass completions, pass attempts, total passing yards,touchdowns, and interceptions. There are five steps in the algorithm. Write a program
+that asks for the five inputs and then prints the pass rating:
+(a) C is the “completions per attempt” times 100 minus 30, all divided by 20.
+(b) Y is the “yards per attempt” minus 3, all divided by 4.
+(c) T is the “touchdowns per attempt” times 20.
+(d) I is 2.375 minus (“interceptions per attempts” times 35).
+(e) The pass rating is the sum of C, Y, T, and I, all divided by 6 and then multiplied
+by 100.'''
+
+passcompletions = int(input("pass completions = "))
+passattempts = int(input("pass attempts = "))
+totalpassingyards = int(input("total passing yards = "))
+touchdowns = int(input("touchdowns = "))
+interceptions = int(input("interceptions = "))
+
+C = (100 * passcompletions - 30)/20
+Y = (totalpassingyards - 3)/4
+T = 20 * touchdowns
+I = (35 * interceptions) - 2.375
+
+passrating = ((C + Y + T + I )/6)*100
+
+print(passrating)
