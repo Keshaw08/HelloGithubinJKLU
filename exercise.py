@@ -202,3 +202,13 @@ print(F)
 g = F/m2
 
 print(g)
+
+'''(Using modules) Python comes with hundreds of modules. Here is a challenge for you:
+find a module that you can import that will generate today’s date so you can print it.
+Use your favorite search engine for help in finding which module you need and how
+to use it. In the end, your task is to do the following:
+>>> print("Today’s date is:", X )
+'''
+from datetime import date
+today = date.today()
+print("Today's date is : ", today)
