@@ -151,3 +151,13 @@ if (n > 0):
     print("hours = " + str((n/86400)*24) + "Minutes = " + str(n/60) +"Seconds =" + str(n/60))
     
     
+'''If the lengths of the two parallel sides of a trapezoid are X meters and Y meters,
+respectively, and the height is H meters, what is the area of the trapezoid?Write Python
+code to output the area.
+'''
+x = int(input("length in meter = "))
+y = int(input("length in meter = "))
+h = int(input("what is the height = "))
+
+z = ((x + y)/2)*h
+print(z)
