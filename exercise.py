@@ -141,4 +141,13 @@ with open('test4.txt', "w") as asn4:
             asn4.write(j)
 with open('test4.txt', "r") as readasn4:
     print(readasn4.read())
-        
+      
+'''A day has 86,400 secs (24*60*60). Given a number in the range 1 to 86,400, output
+the current time as hours, minutes, and seconds with a 24-hour clock. For example:
+70,000 sec is 19 hours, 26 minutes, and 40 seconds. ''' 
+
+#Ans.
+if (n > 0):
+    print("hours = " + str((n/86400)*24) + "Minutes = " + str(n/60) +"Seconds =" + str(n/60))
+    
+    
