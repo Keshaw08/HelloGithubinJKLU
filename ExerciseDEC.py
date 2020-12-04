@@ -60,3 +60,15 @@ a = 8
 s = (a*((r**n)  - 1))/(r - 1) 
 
 print(s)
+
+'''Create a program that chooses a random number number between 1 and 9. Ask the user for a number between 1 and 9. Compare the user's number to the random number. If the user guessed the random number print "you guessed it!", if the user did not guess the random number print back to the user "try again". Give 3 chances to the user.'''
+
+from numpy import random
+z = random.randint(0,9)
+
+n = int(input("Tell me a no. "))
+
+if(z == n):
+    print("you guessed it!")
+else:
+    print("try again")
