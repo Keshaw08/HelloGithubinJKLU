@@ -47,3 +47,16 @@ for i in range(0, 5):
         for l in range(0, i-3):
             print("*", end=" ")
         print()
+
+'''Find the sum of the series 8 +88 + 888 + 8888 + .. n terms. Take the n from the user.'''
+
+n = int(input("Tell me a no. = "))
+
+z = 8 + 88 + 888 + n
+
+r = 11
+a = 8
+
+s = (a*((r**n)  - 1))/(r - 1) 
+
+print(s)
