@@ -16,3 +16,18 @@ for i in range(a, b):
     z = (int(i/c) and int(i/d))
     
     print("divisible by c and d are  " + str(i) + "->" + str(z))
+
+'''Write a Python program that accepts a string and calculate the number of digits and letters. Sample Data : 12Pythond32 Expected Output : Letters 7 Digits 4'''
+
+n = str(input("Write anything = "))
+l = 0
+d = 0
+for i in n:
+    if (i.isalpha()):
+        l = l + 1
+    elif(i.isdigit()):
+        d = d + 1
+    else:
+        pass
+print("the no. of letters are = ",l)
+print("the no. of digits are = ",d)
