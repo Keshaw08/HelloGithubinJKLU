@@ -31,3 +31,19 @@ for i in n:
         pass
 print("the no. of letters are = ",l)
 print("the no. of digits are = ",d)
+
+'''Write a Python program to construct the following pattern, using a nested for loop. * * * * * * * * * * * * *'''
+
+for i in range(0, 5):
+    if (i <= 2):
+        for j in range(0, i+1):
+            print("*", end=" " )
+        print()
+    elif( 2 < i <= 3 ):
+        for k in range(0, i-1):
+            print("*", end=" ")
+        print()
+    elif(i == 4):
+        for l in range(0, i-3):
+            print("*", end=" ")
+        print()
