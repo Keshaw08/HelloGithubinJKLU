@@ -75,3 +75,8 @@ else:
 
 '''Write for loop that will print “pbil” when “alphebetical” is the input'''
 
+n = input("Tell me something = ")
+
+if (n.isalpha()):
+     for i in range(0,10):
+        print("pbil")
