@@ -72,3 +72,6 @@ if(z == n):
     print("you guessed it!")
 else:
     print("try again")
+
+'''Write for loop that will print “pbil” when “alphebetical” is the input'''
+
