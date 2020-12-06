@@ -258,3 +258,28 @@ BMI = weight/height**2
 print(BMI)
 
 '''hello'''
+
+#Replace all ______ with rjust, ljust or center. 
+
+thickness = int(input()) #This must be an odd number
+c = 'H'
+
+#Top Cone
+for i in range(thickness):
+    print((c*i).rjust(width,'-')(thickness-1)+c+(c*i).ljust(width,'-')(thickness-1))
+
+#Top Pillars
+for i in range(thickness+1):
+    print((c*thickness).center(width,'-')(thickness*2)+(c*thickness).ljust(width,'-')(thickness*6))
+
+#Middle Belt
+for i in range((thickness+1)//2):
+    print((c*thickness*5).ljust(width,'-')(thickness*6))    
+
+#Bottom Pillars
+for i in range(thickness+1):
+    print((c*thickness).center(width,'-')(thickness*2)+(c*thickness).ljust(width,'-')(thickness*6))    
+
+#Bottom Cone
+for i in range(thickness):
+    print(((c*(thickness-i-1)).rjust(width,'-')(thickness)+c+(c*(thickness-i-1)).center(width,'-')(thickness)).ljust(width,'-')(thickness*6))
