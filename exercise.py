@@ -1,3 +1,4 @@
+print("Follow me for python")
 print("I will add here my Python Exercises")
 
  -*- coding: utf-8 -*-
