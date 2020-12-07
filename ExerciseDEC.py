@@ -83,3 +83,17 @@ if (n.isalpha()):
 
 '''Write a program that checks to see if a number N is prime. A simple approach checks all numbers from 2 up to N, but after some point numbers are checked that need not be checked. For example, numbers greater than √N need not be checked. Write a program that checks for primarily and avoids those unnecessary checks.'''
 
+import math
+N = int(input("Tell me a no. = "))
+
+if N > 1:
+    for i in range(2,N):
+        if(N % i)==0:
+            print(N ," is not a prime no.")
+            print(i, " Times", N//i, "is ", N)
+            break
+    else:
+        print(N," That is a prime no.")
+        
+else:
+    print(N, " is not a prime number")
