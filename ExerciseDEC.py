@@ -80,3 +80,6 @@ n = input("Tell me something = ")
 if (n.isalpha()):
      for i in range(0,10):
         print("pbil")
+
+'''Write a program that checks to see if a number N is prime. A simple approach checks all numbers from 2 up to N, but after some point numbers are checked that need not be checked. For example, numbers greater than √N need not be checked. Write a program that checks for primarily and avoids those unnecessary checks.'''
+
