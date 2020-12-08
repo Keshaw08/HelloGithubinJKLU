@@ -100,3 +100,18 @@ else:
 
 ''' Make a list of players from the user. Write a program to create two teams randomly selected from the list.'''
 
+ply = []
+import random
+team1 = []
+team2 = []
+
+for i in range(11):
+    ply.append([str(input("Give me players " + str(i) + " "))])
+    
+print("The players are ",ply)
+
+for i in range(6):
+    team1.append(random.choice(ply))
+    team2.append(random.choice(ply))
+print(team1)
+print(team2)
