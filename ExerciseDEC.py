@@ -97,3 +97,6 @@ if N > 1:
         
 else:
     print(N, " is not a prime number")
+
+''' Make a list of players from the user. Write a program to create two teams randomly selected from the list.'''
+
