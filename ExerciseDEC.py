@@ -115,3 +115,19 @@ for i in range(6):
     team2.append(random.choice(ply))
 print(team1)
 print(team2)
+
+'''Take a 2 digit number as input from the user. Find the square of it, identify the resulting 3 digit number which has its 2 digits at the rightmost position similar to the original digits
+Example: input: AB
+AB*AB = CAB for some C'''
+
+n = int(input("Give me a two digit no. "))
+
+z = n**n
+print("The square of the number is = "+ str(z))
+
+j = z%100
+
+if(j == n):
+    print("the rightmost position is = ",j)
+else:
+    ("They are not equal")
