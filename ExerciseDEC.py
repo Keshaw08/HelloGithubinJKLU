@@ -153,3 +153,5 @@ def fruit(word):
         else:
             return "This is not a fruit from li1 basket " + word
 
+'''voting'''
+
