@@ -142,3 +142,14 @@ def do_smoking(age):
     else:
         ("Don't smoke, It'll cost you your life.")
 
+li1 = []
+def fruit(word):
+    count = 0
+    li1 = ["banana", "apple", "orange", "grapes", "mango"]
+    for i in li1:
+        count = count + 1
+        if(word == i):
+            return "This is a fruit in li1 basket " + word
+        else:
+            return "This is not a fruit from li1 basket " + word
+
