@@ -131,3 +131,14 @@ if(j == n):
     print("the rightmost position is = ",j)
 else:
     ("They are not equal")
+
+'''Functions'''
+
+def do_smoking(age):
+    if(age < 18):
+        return "Are you NUTS? I'll call your DAD"
+    elif(age >= 18):
+        return "Don't act cool! you'r are a idiot"
+    else:
+        ("Don't smoke, It'll cost you your life.")
+
