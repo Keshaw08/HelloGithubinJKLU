@@ -155,3 +155,11 @@ def fruit(word):
 
 '''voting'''
 
+def pls_vote(candidate, b="Vote"):
+    if(candidate == "Modi Ji"):
+        return "My " + b + "will go to " + candidate
+    elif(candidate == "Rahul"):
+        return  "My " + b + "will go to " + candidate
+    else:
+        return "NOTA"
+
