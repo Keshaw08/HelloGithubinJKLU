@@ -165,3 +165,18 @@ def pls_vote(candidate, b="Vote"):
 
 '''election'''
 
+def election(voter, age , candidate):
+    voter_list = ["Keshaw", "Kaushal", "Rohit", "Himanshu", "Kartik", "Komal", "Ankita"]
+    count = 0
+    if (age >= 18):
+        for i in voter_list:
+            count = count + 1
+            if (voter == i):
+                return voter + " will vote this " + candidate
+            elif (voter != i):
+                return "You must add your name to voter_list."
+                return voter_list.append(input("Please tell me your name "))
+        
+    elif(age < 18):
+        return voter + ", you must be over 18 to vote!"
+
