@@ -163,3 +163,5 @@ def pls_vote(candidate, b="Vote"):
     else:
         return "NOTA"
 
+'''election'''
+
