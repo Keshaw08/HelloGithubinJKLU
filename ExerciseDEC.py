@@ -185,3 +185,17 @@ def election(voter, age , candidate):
 for k in range(100,1000):
     if (k % 17 == 0):
         print("These are thr number ")
+
+'''In an earlier set of exercises, you were asked to calculate one’s BMI. Augment that
+program by printing out where that BMI fits in the CDC standard weight status
+categories:'''
+
+BMI = int(input("Tlell me your bmi "))
+if (BMI < 18.5):
+    print("underweight")
+elif(18.5 < BMI < 24.9):
+    print("Normal")
+elif(25 < BMI < 29.9):
+    print("Overweight")
+else:
+    print("Obese")
