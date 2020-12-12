@@ -180,3 +180,8 @@ def election(voter, age , candidate):
     elif(age < 18):
         return voter + ", you must be over 18 to vote!"
 
+'''Write a three digit no. divisible by 17'''
+
+for k in range(100,1000):
+    if (k % 17 == 0):
+        print("These are thr number ")
