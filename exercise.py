@@ -284,3 +284,17 @@ for i in range(thickness+1):
 #Bottom Cone
 for i in range(thickness):
     print(((c*(thickness-i-1)).rjust(width,'-')(thickness)+c+(c*(thickness-i-1)).center(width,'-')(thickness)).ljust(width,'-')(thickness*6))
+
+    my_var = 6
+if my_var % 2:
+    if my_varvar**3 != 27:
+        my_var = my_var + 4
+
+    else:
+        my_var /= 1.5 # Assignment 2
+else:
+    if my_var <= 10:
+        my_var *= 2 # Assignment 3
+    else:
+        my_var -= 2 # Assignment 4
+print(my_var)
