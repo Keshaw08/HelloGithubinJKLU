@@ -205,3 +205,9 @@ import pandas as pd
 
 data = pd.read_csv("housepricedata.csv")
 print(data)
+
+import pandas as pd
+
+data = pd.read_csv("housepricedata.csv", index_col= 0)
+print(data[["GarageArea", "AboveMedianPrice"]])
+print(data.loc[[10859, 7388, 9550, 12358, 6900]])
