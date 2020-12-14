@@ -206,8 +206,23 @@ import pandas as pd
 data = pd.read_csv("housepricedata.csv")
 print(data)
 
+
+'''
 import pandas as pd
 
 data = pd.read_csv("housepricedata.csv", index_col= 0)
 print(data[["GarageArea", "AboveMedianPrice"]])
 print(data.loc[[10859, 7388, 9550, 12358, 6900]])
+'''
+'''Write a short program that will:
+ prompt the user for a number
+ print out whether the number is a perfect square
+ prompt the user for another number if the input was not a perfect square '''
+
+import math
+n = int(input("Tell me a number "))
+root = math.sqrt(n)
+if (int(root + 0.5)**2 == n):
+    print("Yeah this no. is perfect square")
+else:
+    print()
