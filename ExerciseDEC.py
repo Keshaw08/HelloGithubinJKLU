@@ -201,3 +201,7 @@ else:
     print("Obese")
 
 '''You have house price dataset on Slack. You are going to buy a house which has price below median price and large garage size. select top 5 houses with these constraints and create a new separeted csv file.'''
+import pandas as pd
+
+data = pd.read_csv("housepricedata.csv")
+print(data)
