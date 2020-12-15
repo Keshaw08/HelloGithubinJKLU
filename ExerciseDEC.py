@@ -248,3 +248,15 @@ def max_2(z, n):
 
 max_2(int(input("Whats z = ")),
      int(input("Whats n = ")))
+
+def max_3(x, z, n):
+    if (x > z and x > n):
+        print(str(x) + " is maximum")
+    elif(z > x and z > n):
+        print(str(z) + " is maximum")
+    elif(n > x and n > z):
+        print(str(n) + " is maximum")
+        
+max_3(int(input("Whats x = ")),
+      int(input("Whats z = ")),
+     int(input("Whats n = ")))
