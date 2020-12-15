@@ -237,3 +237,14 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
+def max_2(z, n):
+    if (z > n):
+        print(str(z) + " is maximum")
+    elif(n > z):
+        print(str(n) + " is maximum")
+    else:
+        print("These both are equal")
+
+max_2(int(input("Whats z = ")),
+     int(input("Whats n = ")))
