@@ -226,3 +226,8 @@ if (int(root + 0.5)**2 == n):
     print("Yeah this no. is perfect square")
 else:
     print()
+
+def go_wish(*Names):
+    for i in Names:
+        print("Namaste " + i)
+go_wish("Keshu", "Mohit", "Rohit", "Krishna")
