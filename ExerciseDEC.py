@@ -231,3 +231,9 @@ def go_wish(*Names):
     for i in Names:
         print("Namaste " + i)
 go_wish("Keshu", "Mohit", "Rohit", "Krishna")
+
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
