@@ -260,3 +260,15 @@ def max_3(x, z, n):
 max_3(int(input("Whats x = ")),
       int(input("Whats z = ")),
      int(input("Whats n = ")))
+
+def army_slc(name, age, fitness):
+    if(age > 18):
+        if(fitness == "Good"):
+            return "You'll need to increse you fitness strength " + "Mr. " + name
+        elif(fitness == "Excellent"):
+            return "You can join THE INDIAN ARMY " + "Mr. " + name
+        else:
+            return "Go Home"
+
+army_slc("Tony", 22, "Good")
+army_slc("Steve", 23, "Excellent")
