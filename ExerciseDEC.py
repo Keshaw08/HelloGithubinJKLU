@@ -272,3 +272,14 @@ def army_slc(name, age, fitness):
 
 army_slc("Tony", 22, "Good")
 army_slc("Steve", 23, "Excellent")
+
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+
+x = np.arange(0,4*np.pi,0.1)
+y = np.sin(x)
+
+
+plt.plot(x,y)
+plt.show()
