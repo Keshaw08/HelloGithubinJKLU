@@ -289,3 +289,9 @@ y = [1,8,27,64,125,216,343,512,729,1000]
 
 plt.plot(x,y, 'o-g', ms = 10, mec = 'blue', mfc = 'yellow')
 plt.show()
+
+x = [1,2,3,4,5,6,7,8,9,10]
+y = [1,4,9,16,25,36,49,64,81,100]
+
+plt.plot(x,y, linestyle = 'steps',animated = 'true')
+plt.show()
