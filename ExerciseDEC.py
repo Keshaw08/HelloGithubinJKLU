@@ -301,3 +301,27 @@ y = [1,9,1,9,1,9,1,9,1,9]
 
 plt.plot(x,y,'o-b', ms = 10, mfc = 'red', mec = 'black', linestyle = ':')
 plt.show()
+
+'''Use list_one and find the difference between the sum of values of even index and odd_index.'''
+list_one = [24,4,654,23,345,654,3,1,45,3,23,23,33]
+
+val_even = []
+val_odd = []
+
+for i in range (0, len(list_one)):
+    if (i%2==0):
+        val_even.append(list_one[i])
+    else:
+        val_odd.append(list_one[i])
+        
+print(val_even)
+print(val_odd)
+
+n = sum(val_even)
+z = sum(val_odd)
+
+print(n)
+print(z)
+
+diff_Even_Odd = n - z
+print(diff_Even_Odd)
