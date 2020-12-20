@@ -325,3 +325,5 @@ print(z)
 
 diff_Even_Odd = n - z
 print(diff_Even_Odd)
+
+'''Use list_one, create list_four by adding first and last element then second and second last then third and third last and so on like. Print list_four.'''
