@@ -327,3 +327,18 @@ diff_Even_Odd = n - z
 print(diff_Even_Odd)
 
 '''Use list_one, create list_four by adding first and last element then second and second last then third and third last and so on like. Print list_four.'''
+list_one = [24,4,654,23,345,654,3,1,45,3,23,23,33]
+list_1 = []
+list_2 = []
+list_four = []
+
+for i in range (0,len(list_one)):
+    list_1.append(list_one[i])
+for j in range(len(list_one)-1,-1,-1):
+        list_2.append(list_one[j])
+        
+for i in range(0,len(list_1)):
+    list_four.append(list_1[i] + list_2[i])
+print(list_1)
+print(list_2)
+print(list_four)
