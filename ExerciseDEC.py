@@ -344,3 +344,12 @@ print(list_2)
 print(list_four)
 
 print("hello")
+
+import pandas as pd
+import numpy as np
+
+en_show = pd.read_csv("ASN_1.csv")
+en_show = en_show.head(10)
+
+df = pd.DataFrame(en_show)
+df
