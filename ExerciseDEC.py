@@ -355,3 +355,9 @@ df = pd.DataFrame(en_show)
 df
 
 df[["SCAM1992","THE FAMILY MAN","SPECIAL OPS","PAATAL LOK","PANCHAYAT","SCARED GAMES","MIRZAPUR","PITCHERS","ASUR","KOTA FACTORY"]].to_numpy()
+
+import numpy as np
+from numpy import linalg as LA
+
+A = np.array([[0,1,1,0],[0,0,1,0],[0,0,0,1],[1,1,0,0]])
+A
