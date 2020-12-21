@@ -361,3 +361,14 @@ from numpy import linalg as LA
 
 A = np.array([[0,1,1,0],[0,0,1,0],[0,0,0,1],[1,1,0,0]])
 A
+X0 = np.array([[1],[1],[1],[1]])
+X0
+
+def iteration(A,X,i):
+    X_i = (np.matmul(A,X))
+    maxx = np.max(X_i)
+    X_i = X_i/maxx
+    return "X",i, X_i
+    
+    for j in range(0,i):
+        print(X_i)
