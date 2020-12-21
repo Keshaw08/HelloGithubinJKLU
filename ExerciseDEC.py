@@ -353,3 +353,5 @@ en_show = en_show.head(10)
 
 df = pd.DataFrame(en_show)
 df
+
+df[["SCAM1992","THE FAMILY MAN","SPECIAL OPS","PAATAL LOK","PANCHAYAT","SCARED GAMES","MIRZAPUR","PITCHERS","ASUR","KOTA FACTORY"]].to_numpy()
