@@ -372,3 +372,14 @@ def iteration(A,X,i):
     
     for j in range(0,i):
         print(X_i)
+
+
+'''Write code to find the deviation of list_four elements from the average of list_four elements. (use list_four created in Q.2) and print.'''
+import pandas as pd
+import numpy as np
+
+list_four
+
+df = pd.DataFrame(list_four)
+print(df)
+print("Deviation = ",df.std())
