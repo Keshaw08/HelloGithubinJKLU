@@ -383,3 +383,20 @@ list_four
 df = pd.DataFrame(list_four)
 print(df)
 print("Deviation = ",df.std())
+
+import numpy as np
+X=[]
+eigen=[0]
+X.append(np.array([[1],[1],[1],[1],[1],[1],[1],[1],[1],[1]]))
+print(A,'\n\n',X)
+print("-----------------------------------------")
+
+i=0
+while len(eigen)==1 or np.round(eigen[i],2)!=np.round(eigen[i-1],2):
+    X.append(np.matmul(A,X[i]))
+    eigen.append(max(X[i+1]))
+    X[i+1]= np.round(X[i+1]/eigen[i+1],4)
+    print("Iteration",i+1,":")
+    print(X[i+1],"\t",eigen[i+1])
+    print()
+    i+=1
