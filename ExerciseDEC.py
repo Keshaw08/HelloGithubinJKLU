@@ -400,3 +400,15 @@ while len(eigen)==1 or np.round(eigen[i],2)!=np.round(eigen[i-1],2):
     print(X[i+1],"\t",eigen[i+1])
     print()
     i+=1
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+df = pd.DataFrame(stu_sub)
+lis1 = df.to_numpy()
+
+x = df[["Subject_1"]].to_numpy()
+y = df[["Name"]].to_numpy()
+fig = plt.figure(figsize = (10,10))
+plt.pie(x,labels = y)
+plt.show()
