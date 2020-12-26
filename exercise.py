@@ -298,3 +298,22 @@ else:
     else:
         my_var -= 2 # Assignment 4
 print(my_var)
+
+''' Use list_three and print the strings where sum of letter’s position are greater than 30. “a” has position 1 and “z” has position “26”. Example string “us” has two letters ‘u’ has position 21 and ‘s’ has position 19, so sum is 40 and greater than 30 and we are going to print it'''
+list_three = ["us","we","in","you","city","zebra","lion","btech","minister","so","bharat"]
+
+def cha_val(x):
+    list_pos = []
+    for i in x:
+        list_pos.append(ord(i)-96)
+    
+    n = sum(list_pos)
+    if (n > 30):
+        return "Yes " + x + " value is above 30"
+    else:
+        return "No " + x + "value is less then 30"
+    
+
+for x in range (len(list_three)):
+    z = cha_val(list_three[x])
+print(z)
