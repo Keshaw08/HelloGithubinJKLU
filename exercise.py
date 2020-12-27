@@ -351,3 +351,8 @@ y = np.sin(x)
 
 plt.plot(x,y,'o-r',ms = 10,alpha = 0.4,mfc = 'blue')
 plt.show()
+
+dict = {"rishab": 85, "pratham": 77, "Sahil": 74, "Bhvya": 77,"varsha": 44,"mehak": 90,"moomal": 49,"kritika": 88}
+plt.scatter(dict.keys(),dict.values(), color = "red",alpha = 0.5)
+fig = plt.figure(figsize = (30,300))
+plt.show()
