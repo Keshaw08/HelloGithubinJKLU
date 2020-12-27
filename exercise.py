@@ -356,3 +356,12 @@ dict = {"rishab": 85, "pratham": 77, "Sahil": 74, "Bhvya": 77,"varsha": 44,"meha
 plt.scatter(dict.keys(),dict.values(), color = "red",alpha = 0.5)
 fig = plt.figure(figsize = (30,300))
 plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+students = ["Shakir","Rishab","pratham","Sahil","Bhavya","Varsha","Mahek","Moomal"]
+sub_3_marks = [77,89,69,69,47,47,95,55]
+plt.bar(students, sub_3_marks, color = ["red","blue","green","purple","black","Maroon","lavender","yellow"])
+fig = plt.figure(figsize = (20,20))
+plt.show()
