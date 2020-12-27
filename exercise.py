@@ -345,3 +345,9 @@ plt.ylabel("Marks")
 plt.title("Marks distribution")
 fig = plt.figure(figsize = (10,10))
 plt.show()
+
+x = np.arange(0,8*np.pi,0.1)
+y = np.sin(x)
+
+plt.plot(x,y,'o-r',ms = 10,alpha = 0.4,mfc = 'blue')
+plt.show()
