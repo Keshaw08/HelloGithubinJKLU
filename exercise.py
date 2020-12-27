@@ -333,3 +333,15 @@ def cha_val(x):
         return "No " + x + " value is less then 30"
     
 cha_val("minister")
+
+df = pd.DataFrame(stu_sub)
+
+x = df[["Subject_2"]].to_numpy()
+y = df[["Name"]].to_numpy()
+
+plt.hist(x,bins= (50,60,70,80,90,100))
+plt.xlabel("Students in this group")
+plt.ylabel("Marks")
+plt.title("Marks distribution")
+fig = plt.figure(figsize = (10,10))
+plt.show()
