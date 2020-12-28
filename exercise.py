@@ -365,3 +365,26 @@ sub_3_marks = [77,89,69,69,47,47,95,55]
 plt.bar(students, sub_3_marks, color = ["red","blue","green","purple","black","Maroon","lavender","yellow"])
 fig = plt.figure(figsize = (20,20))
 plt.show()
+
+'''Use tuple_one and find the sum of values after decimal and print.'''
+tuple_one = (23,37,98,89.5,38.33,88,12.34,23.44)
+
+z = tuple_one[0]%1
+print(z)
+i = tuple_one[1]%1
+print(i)
+n = tuple_one[2]%1
+print(n)
+k = tuple_one[3]%1
+print(k)
+l = tuple_one[4]%1
+print(l)
+t = tuple_one[5]%1
+print(t)
+r = tuple_one[6]%1
+print(r)
+e = tuple_one[7]%1
+print(e)
+
+g = (z+i+n+k+l+t+r+e)
+print(g)
