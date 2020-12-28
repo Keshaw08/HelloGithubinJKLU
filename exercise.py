@@ -388,3 +388,14 @@ print(e)
 
 g = (z+i+n+k+l+t+r+e)
 print(g)
+'''Another way to do the above problem'''
+tuple_one = (23,37,98,89.5,38.33,88,12.34,23.44)
+
+A = []
+
+for i in range(len(tuple_one)):
+    A.append(tuple_one[i]%1)
+
+print(A)
+z = sum(A)
+print(z)
