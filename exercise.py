@@ -399,3 +399,29 @@ for i in range(len(tuple_one)):
 print(A)
 z = sum(A)
 print(z)
+
+'''Given a set of names: • Some of them are Hindi readers • Some of them are English readers • Some are able to read Hindi and English both So you have to find:
+
+The number of only English readers
+The number of only Hindi readers
+Print the set of both language readers
+Print the set of names who are not able to read Hindi and English both'''
+
+set_of_names = set({'hj', 'kv', 'on', 'fi', 'cg', 'kd', 'hs', 'jn', 'si', 'ds', 'oc', 'jq', 'cy', 'og', 'yh', 'gr', 'id', 'kl', 'oi', 'ob', 'tr', 'iv', 'df', 'kj', 'js', 'vl', 'gj', 'ai', 'ih', 'gy', 'hf', 'jh', 'of', 'aj', 'ru', 'fk', 'je', 'hv', 'oj', 'sc', 'he', 'bn', 'le', 'os', 'wq', 'av', 'bv', 'oh', 'eo', 'wh', 'gu', 'ck', 'nc', 'we', 'qr', 'bf', 'nb', 'gi', 'vj', 'ld', 'un', 'io', 'hc', 'jt', 'wb', 'sa', 'vk', 'sk', 'ou', 'ri', 'fe', 'cb', 'du', 'vg', 'vp', 'kh', 'cc', 'ga', 'gc', 'ad', 'fy', 'fv', 'if', 'eg', 'od', 'ov', 'ir', 'vh', 'bd', 'vi', 'as', 'qi', 'jd', 'ha', 'au', 'gs', 'hi', 'gh', 'ij', 'vu', 'do', 'fa', 'uf', 'vs', 'lk', 'bc', 'sv', 'ge', 'qe', 'fg', 'hd', 'fd', 'ka', 'ry', 'er', 'fs', 'fo', 'tg', 'or', 'bk', 'jf', 'fj', 'jv', 'ew', 'dn', 'hy', 'hh', 'uh', 'pr', 'hu', 'vc', 'iu', 'po', 'bq', 'fh', 'gg', 'jc', 'sf', 'lf', 'sd', 'ie', 'ff', 'vd', 'db', 'wf', 'wc'})
+hindi_readers_set = set({'hj', 'ou', 'kv', 'do', 'fa', 'vs', 'lk', 'cb', 'hs', 'le', 'sv', 'ge', 'du', 'vg', 'wq', 'vp', 'kh', 'fg', 'cc', 'ga', 'cy', 'gc', 'og', 'wh', 'id', 'gi', 'ry', 'fs', 'bf', 'gu', 'tg', 'fy', 'ad', 'fo', 'fv', 'vj', 'or', 'bk', 'eg', 'tr', 'if', 'ir', 'dn', 'ew', 'jf', 'hh', 'pr', 'vh', 'io', 'js', 'vc', 'vl', 'gj', 'po', 'jt', 'iu', 'bd', 'gg', 'ha', 'je', 'gy', 'sd', 'au', 'gs', 'fk', 'wf', 'wc', 'ij'})
+english_readers_set = set({'sk', 'hj', 'ri', 'vu', 'do', 'uf', 'sc', 'he', 'on', 'fi', 'kd', 'lk', 'cb', 'le', 'jn', 'si', 'vg', 'ge', 'os', 'oc', 'kh', 'cc', 'fd', 'bv', 'og', 'eo', 'wh', 'id', 'gu', 'fs', 'gi', 'ry', 'tg', 'fy', 'vj', 'ob', 'if', 'jf', 'or', 'gs', 'tr', 'ir', 'fj', 'dn', 'jv', 'bk', 'pr', 'uh', 'df', 'vh', 'kj', 'hc', 'js', 'gj', 'bq', 'jt', 'vi', 'ai', 'qi', 'jd', 'jc', 'ha', 'sf', 'lf', 'jh', 'aj', 'au', 'of', 'wb', 'vk', 'vd', 'db', 'wf', 'gh'})
+
+hindi_only = set([])
+english_only = set([])
+
+hind_eng_both = (hindi_readers_set.union(english_readers_set))
+print(hind_eng_both)
+
+no_hind_eng_both = (set_of_names.difference(hind_eng_both))
+print(no_hind_eng_both)
+
+hindi_only = set_of_names.intersection(hindi_readers_set)
+print(hindi_only)
+
+english_only = set_of_names.intersection(english_readers_set)
+print(english_only)
