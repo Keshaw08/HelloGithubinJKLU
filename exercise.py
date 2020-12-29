@@ -425,3 +425,16 @@ print(hindi_only)
 
 english_only = set_of_names.intersection(english_readers_set)
 print(english_only)
+
+'''''Take tuple_three defined at the top. Use a single loop and find the counts where two even numbers are neighbors. Print count and indexes of first and last occurring neighbor even numbers.'''
+
+tuple_three = (67,89,8,33,48,34,236,34,45,65,6,33,24,43,24,54,65,53,6,6,6,3,43,24,2,53,2,53,4,5,34,5)
+
+for i in range (0,len(tuple_three)):
+    if(tuple_three[i]%2==0 and tuple_three[i+1]%2==0):
+        print("The index of even neighbour is = ",i)
+    else:
+        print("I don't find any even number neighbor")
+        
+print("the first neighbor even number is = 4")
+print("the last neighbor even number is = 23")
