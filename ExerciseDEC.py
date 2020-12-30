@@ -442,3 +442,33 @@ def cha_val(x):
 
 for x in range (len(list_three)):
     print(cha_val(list_three[x]))
+
+'''Use list_two and make slicing where starting index 6, stop index 2 and step of -1 and append this slicing to list_one. Then find the length, sum, average, minimum, maximum of list_one and Print. (Do not use predefined function like min (), max(), len() and sum())'''
+import pandas as pd
+import numpy as np
+
+list_one = [24,4,654,23,345,654,3,1,45,3,23,23,33]
+list_two = [23.4,23,234.34,63,48.9,21,45,98.4,78.4]
+
+for i in range(6,1,-1):
+    list_one.append(list_two[i])
+print(list_one)
+
+z = 0
+n = []
+j = []
+
+list_one.sort(reverse=False)
+for i in range(0,len(list_one)):
+    z = z + list_one[i]
+
+    if(list_one[i-1] > list_one[i]):
+        n.append(list_one[i-1])
+
+    if(list_one[i] < list_one[i-1]):
+        j.append(list_one[i])
+
+print("Sum of all elements of list_one is = ", z)
+print("Length of list_one is = ", i)
+print("Maximum value in list_one is = ", n)
+print("Minimum value in list_one is = ", j)
