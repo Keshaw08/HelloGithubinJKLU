@@ -425,3 +425,20 @@ print(removed_h)
 set_of_names = set(set_of_names)
 new_names = set_of_names.difference(removed_h)
 print(new_names)
+
+list_three = ["us","we","in","you","city","zebra","lion","btech","minister","so","bharat"]
+
+def cha_val(x):
+    list_pos = []
+    for i in x:
+        list_pos.append(ord(i)-96)
+    
+    n = sum(list_pos)
+    if (n > 30):
+        return "Yes " + "==>" + x + "<==" + " value is above 30"
+    else:
+        return "No " + "==>" + x + "<==" + "value is less then 30"
+    
+
+for x in range (len(list_three)):
+    print(cha_val(list_three[x]))
