@@ -485,3 +485,12 @@ if(n.isdigit()):
     print("correct")
 else:
     print("try again")
+
+import math
+N = int(input("tell me no. "))
+
+for i in range(2,N):
+    if(N//i == i and N/i == i):
+        print("that's not a prime number")
+    else:
+        print("it is prime number")
