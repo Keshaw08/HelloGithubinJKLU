@@ -472,3 +472,9 @@ print("Sum of all elements of list_one is = ", z)
 print("Length of list_one is = ", i)
 print("Maximum value in list_one is = ", n)
 print("Minimum value in list_one is = ", j)
+
+n = int(input("tell me a number = "))
+count = 0
+for i in range(1,n+1):
+    count = count + i
+    print(count) #b and c part is pending
