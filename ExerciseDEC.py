@@ -478,3 +478,10 @@ count = 0
 for i in range(1,n+1):
     count = count + i
     print(count) #b and c part is pending
+
+n = input("Tell me an integer ")
+
+if(n.isdigit()):
+    print("correct")
+else:
+    print("try again")
