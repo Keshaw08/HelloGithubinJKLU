@@ -494,3 +494,5 @@ for i in range(2,N):
         print("that's not a prime number")
     else:
         print("it is prime number")
+
+        print("My pc is lagging what should i do.")
