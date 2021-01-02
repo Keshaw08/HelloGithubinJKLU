@@ -501,3 +501,10 @@ while 5 > 2:
     print("hello")
     if (5 == 12):
     break
+
+i = 3
+while i > 2:
+    print("hello")
+    i = i + 1
+    if (i == 12):
+        break
