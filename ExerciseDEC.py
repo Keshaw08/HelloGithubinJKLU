@@ -508,3 +508,38 @@ while i > 2:
     i = i + 1
     if (i == 12):
         break
+
+'''In the exercises for Chapter 1, an algorithm was given for calculating the pass rating for
+football quarterbacks. One can use the pass rating to determine whether a quarterback
+had a mediocre, good, or great year. A rating is poor if it is 85 or below, mediocre if
+above 85, good if above 90, and great if above 95. Add to the pass rating program to
+output “poor,” “mediocre,” “good,” or “great.”
+To test your program, you can look up actual data on www.nfl.com or use the
+following information from 2007:
+Completions Attempts Yards Touchdowns Interceptions
+Donovan McNabb 180 316 2647 18 6
+Tom Brady 319 516 3529 24 12
+Peyton Manning 362 557 4397 31 9'''
+
+passcompletions = int(input("pass completions = "))
+passattempts = int(input("pass attempts = "))
+totalpassingyards = int(input("total passing yards = "))
+touchdowns = int(input("touchdowns = "))
+interceptions = int(input("interceptions = "))
+
+C = (100 * passcompletions - 30)/20
+Y = (totalpassingyards - 3)/4
+T = 20 * touchdowns
+I = (35 * interceptions) - 2.375
+
+passrating = ((C + Y + T + I )/6)*100
+
+if(passrating <= 85):
+    print("It is poor")
+    
+elif(passrating > 85):
+    print("mediocre")
+elif(passrating > 90):
+    print("good")
+elif(passrating > 95):
+    print("great")
