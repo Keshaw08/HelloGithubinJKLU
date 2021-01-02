@@ -496,3 +496,8 @@ for i in range(2,N):
         print("it is prime number")
 
         print("My pc is lagging what should i do.")
+
+while 5 > 2:
+    print("hello")
+    if (5 == 12):
+    break
