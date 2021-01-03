@@ -557,3 +557,26 @@ if(k == n):
     print("Yes",k)
 else:
     print("you are wrong")
+
+import matplotlib.pyplot as plt
+df = pd.DataFrame(data)
+#df[["TotalBsmtSF"]]
+list1 = df["TotalBsmtSF"].tolist()
+list2 = df["GarageArea"].tolist()
+
+A = []
+j = []
+for i in range(len(list1)):
+    if(400<list1[i]<800):
+        A.append(list1[i])
+print(A)
+
+for i in range(len(list2)):
+    if(400<list2[i]<800):
+        j.append(list2[i])
+print(j)
+
+plt.pie(A,radius= 4.4)
+plt.xlabel("Graph of TotalBsmtSF in range 400 to 800")
+
+plt.show()
