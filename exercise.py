@@ -438,3 +438,11 @@ for i in range (0,len(tuple_three)):
         
 print("the first neighbor even number is = 4")
 print("the last neighbor even number is = 23")
+
+
+n = int(input("tell me a no. b/w 2 to 20 = "))
+
+if(n%3==0):
+    print("yes it is divisible")
+else:
+    print("no it is not")
