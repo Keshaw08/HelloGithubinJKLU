@@ -463,3 +463,47 @@ print("length of D = ",len(D))
 plt.pie(D,radius = 2)
 plt.xlabel("Total number of houses who use TotalBsmtSF from 600 to 700")
 plt.show()
+
+list2 = df["TotalBsmtSF"].tolist()
+A = []
+B = []
+C = []
+D = []
+
+for i in range(0,len(list2)):
+    if(400 < list2[i] < 500):
+        A.append(list2[i])
+#print(A)
+
+for j in range(0,len(list2)):
+    if(500 < list2[j] < 600):
+        B.append(list2[j])
+#print(B)
+
+for k in range(0,len(list2)):
+    if(600 < list2[k] < 700):
+        C.append(list2[k])
+#print(C)
+
+for l in range(0,len(list2)):
+    if(700 < list2[l] < 800):
+        D.append(list2[l])
+#print(D)
+
+plt.subplot(2,8,1)
+plt.pie(A,radius = 4)
+plt.xlabel("BsmtSF from 400 to 500")
+
+plt.subplot(2,8,3)
+plt.pie(B,radius = 4)
+plt.xlabel("BsmtSF from 500 to 600")
+
+plt.subplot(2,8,6)
+plt.pie(C,radius = 4)
+plt.xlabel("BsmtSF from 600 to 700")
+
+plt.subplot(2,8,8)
+plt.pie(D,radius = 4)
+plt.xlabel("BsmtSF from 700 to 800")
+
+plt.show()
