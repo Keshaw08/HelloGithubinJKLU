@@ -451,3 +451,15 @@ A_int = int(input('Enter an integer greater than 10: '))
 while A_int > 10:
     A_int = A_int - 1
     print(A_int)
+
+list2 = df["TotalBsmtSF"].tolist()
+D = []
+for l in range(0,len(list2)):
+    if(700 < list2[l] < 800):
+        D.append(list2[l])
+#print(D)
+print("length of D = ",len(D))
+
+plt.pie(D,radius = 2)
+plt.xlabel("Total number of houses who use TotalBsmtSF from 600 to 700")
+plt.show()
