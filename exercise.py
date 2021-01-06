@@ -507,3 +507,5 @@ plt.pie(D,radius = 4)
 plt.xlabel("BsmtSF from 700 to 800")
 
 plt.show()
+
+input("tell me file name ")
