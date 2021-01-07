@@ -589,3 +589,13 @@ def letters(n):
             print("total consonent are ",i)
             
 letters(input("tell me a string = "))
+
+def display_menu():
+    menu = ["app","game","message","camera","phone"]
+    for i in menu:
+        return i
+    
+    def choice(i):
+        return "so this is my menu app " + i
+
+print(display_menu())
