@@ -609,3 +609,10 @@ def fnl_sco(x,z):
         print("the game was a tie")
         
 fnl_sco(2,4)
+
+def einstein(mass):
+    c = 350
+    E = mass*c**2
+    return E
+
+einstein(200)
