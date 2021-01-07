@@ -580,3 +580,12 @@ plt.pie(A,radius= 4.4)
 plt.xlabel("Graph of TotalBsmtSF in range 400 to 800")
 
 plt.show()
+
+def letters(n):
+    for i in n:
+        if(i=="a" or i=="e" or i=="i" or i=="o" or i=="u"):
+            print("total vowels are ",i)
+        else:
+            print("total consonent are ",i)
+            
+letters(input("tell me a string = "))
