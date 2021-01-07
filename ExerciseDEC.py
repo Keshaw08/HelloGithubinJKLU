@@ -629,3 +629,13 @@ response2_str = input("Enter a second string: ")
 
 print(func1(response1_str, response2_str))
 print(func1(response2_str,response1_str))
+
+def prompt_open(flnm):
+    if(flnm == "investment"):
+        with open("innvest.txt","r") as flnm:
+            print(flnm.read())
+            print(flnm.mode)
+    else:
+        print("try again")
+            
+prompt_open("hello")
