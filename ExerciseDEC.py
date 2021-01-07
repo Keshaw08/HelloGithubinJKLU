@@ -639,3 +639,10 @@ def prompt_open(flnm):
         print("try again")
             
 prompt_open("hello")
+
+safe_input = input("tell me something =")
+if(safe_input.isdigit() or safe_input.isalpha()):
+    print("correct type")
+    
+else:
+    input("tell me again ")
