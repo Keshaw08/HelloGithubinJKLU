@@ -599,3 +599,13 @@ def display_menu():
         return "so this is my menu app " + i
 
 print(display_menu())
+
+def fnl_sco(x,z):
+    if(x > z):
+        print("team 1 won")
+    elif(x < z):
+        print("team 2 won")
+    else:
+        print("the game was a tie")
+        
+fnl_sco(2,4)
