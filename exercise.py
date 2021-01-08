@@ -572,6 +572,14 @@ def leap_year(year):
         print("it's not a leap year")
         
 leap_year(1900)
+
+def item(cost,x):
+    if(x == "true"):
+        return cost - ((cost*1/10)+ (cost*1/20))
+    else:
+        print("Sorry you are not our member")
+
+item(10000,input("do you have membership = "))
     
 print("End of the program")
 
