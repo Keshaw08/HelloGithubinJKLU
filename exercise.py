@@ -564,6 +564,14 @@ def make_payment(p):
         print("maybe we are having some technical glitch")
         
 make_payment(20)
+
+def leap_year(year):
+    if(year%4==0 and year%100!=0):
+        return "It's a leap year ", year
+    else:
+        print("it's not a leap year")
+        
+leap_year(1900)
     
 print("End of the program")
 
