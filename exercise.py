@@ -542,6 +542,18 @@ def cmn_mlt(x):
         print("Please tell a number less than 100")
         
 cmn_mlt(67)
+
+def call_center(rate):
+    if(rate == 5 or rate == 10):
+        print("with this amount you cant get any thing extra, sorry!")
+    elif(rate == 25):
+        print("Yeah! you have got an extra talk time of dollar $3")
+    elif(rate == 50):
+        print("Hurray! you have got an extra talk time of dollar $8")
+    elif(rate == 100):
+        print("Cheers! you have got an extra talk time of dollar $20")
+        
+call_center(50)
     
 print("End of the program")
 
