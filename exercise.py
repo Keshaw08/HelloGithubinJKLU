@@ -530,6 +530,18 @@ except IOError:
     
 except ValueError:
     print("Line", find_line_str, "isn't a legal line number.")
+
+def cmn_mlt(x):
+    if(x < 100):
+        
+        if(x%6==0 and x%10==0):
+            return "the common multiple of 6 and 10 is ", x
+        else:
+            print("common multiple not found")
+    else:
+        print("Please tell a number less than 100")
+        
+cmn_mlt(67)
     
 print("End of the program")
 
