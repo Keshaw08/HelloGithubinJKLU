@@ -554,6 +554,16 @@ def call_center(rate):
         print("Cheers! you have got an extra talk time of dollar $20")
         
 call_center(50)
+
+def make_payment(p):
+    if(p == 20):
+        print("your payment was succesfully ")
+    elif(p < 20 or p > 20):
+        print("Please retry")
+    else:
+        print("maybe we are having some technical glitch")
+        
+make_payment(20)
     
 print("End of the program")
 
