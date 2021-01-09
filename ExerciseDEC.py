@@ -646,3 +646,14 @@ if(safe_input.isdigit() or safe_input.isalpha()):
     
 else:
     input("tell me again ")
+
+def dt_tm(month,date,year,hour,mn,sec):
+    print(date ,"/", month ,"/" ,year)
+    print(hour,":",mn,":",sec)
+    print(month,"/",year)
+    if(int(hour) < 12):
+        print("It is AM")
+    else:
+        print("It is PM")
+        
+dt_tm(input("month = "),input("date = "),input("year = "),input("hour = "),input("min = "),input("sec = "))
