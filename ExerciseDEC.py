@@ -657,3 +657,18 @@ def dt_tm(month,date,year,hour,mn,sec):
         print("It is PM")
         
 dt_tm(input("month = "),input("date = "),input("year = "),input("hour = "),input("min = "),input("sec = "))
+
+def dt_tm(month,date,year,hour,mn,sec):
+    if(int(date) <= 31 and int(month) <= 12 and int(hour) <= 24 and int(mn) <= 60 and int(sec) <= 60 ):
+        print(date ,"/", month ,"/" ,year)
+        print(hour,":",mn,":",sec)
+        print(month,"/",year)
+        if(int(hour) < 12):
+            print("It is AM")
+        else:
+            print("It is PM")
+            
+    else:
+        print("You have not entered valid numbers")
+        
+dt_tm(input("month = "),input("date = "),input("year = "),input("hour = "),input("min = "),input("sec = "))
