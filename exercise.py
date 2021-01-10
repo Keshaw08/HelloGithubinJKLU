@@ -580,6 +580,15 @@ def item(cost,x):
         print("Sorry you are not our member")
 
 item(10000,input("do you have membership = "))
+
+def func(A,B):
+    z = {1,3,4,8,9}
+    if (A < B):
+        for i in range(A,B+1):
+            print(i)
+    else:
+        print("Please write it again")
+func(1,9)
     
 print("End of the program")
 
