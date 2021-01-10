@@ -589,6 +589,13 @@ def func(A,B):
     else:
         print("Please write it again")
 func(1,9)
+
+n = "{ABC}"
+
+def st_pnc(n):
+    for i in range(len(n)*2):
+        print(n[::-1],n,n[2:])
+st_pnc(n)
     
 print("End of the program")
 
