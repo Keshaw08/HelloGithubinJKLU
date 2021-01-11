@@ -672,3 +672,33 @@ def dt_tm(month,date,year,hour,mn,sec):
         print("You have not entered valid numbers")
         
 dt_tm(input("month = "),input("date = "),input("year = "),input("hour = "),input("min = "),input("sec = "))
+
+import pandas as pd
+
+A = pd.DataFrame({"day": ["Monday","Tuesday","Wednesday","Thursday","Friday"]})
+A.set_index("day", inplace = True)
+Students = " "
+j = 0
+while j != 10:
+    Students = input("Enter the name Student ")
+    j = j +1
+    A[Students] = " "
+inp = " "
+while inp != 4:
+    print("\n. Add attendance \n. Display Attendance \n. Students with less than 75% Attendance \n. exit")
+    inp = int(input("Select an option : "))
+    
+    if inp == 1:
+        print("Enter one of the following below ")
+        day = input("What day is today : ")
+        for i in A.columns:
+            x = input(f'is {i} present(p) or absent(a) : ')
+            A.at[day,i] = x
+    if inp == 2:
+        print(A)
+    if inp == 3:
+        t = int(A.shape[0])*0.75
+        for i in A.columns:
+            x = int(A.query(f'{i} == \'p\'').size)
+            if x > t:
+                print(i)
