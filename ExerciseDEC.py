@@ -702,3 +702,19 @@ while inp != 4:
             x = int(A.query(f'{i} == \'p\'').size)
             if x > t:
                 print(i)
+
+str_list = ["hi","mom","dad"]
+num_list = [1,57,15]
+num_list[-1] = 25
+num_list
+
+print(str_list + num_list)
+print(str_list[0],num_list[-1])
+print(str_list.append(num_list))
+print(str_list)
+#print(str_list.sort())
+print(str_list)
+print(str_list.extend([127,256]))
+print(str_list)
+print(str_list.pop(2))
+print(str_list)
