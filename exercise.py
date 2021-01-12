@@ -596,6 +596,43 @@ def st_pnc(n):
     for i in range(len(n)*2):
         print(n[::-1],n,n[2:])
 st_pnc(n)
+
+students = {"tony" : {},
+           "raman" : {},
+           "thor"  : {}
+           }
+flag1 = 0
+days_string = "Monday/Tuesday/Wednesday/Thursday/Friday/Saturday/Sunday"
+days = days_string.split("/")
+while(flag1 == 0):
+    print("Choose an option\n1.Add attendance\n2.Display attendance\n3.Display students who has attendance below 75%\n4. Exit.")
+    option1 = int(input("\nEnter your choice : "))
+    if option1 == 1:
+        flag2 = 0
+        while(flag2==0):
+            option2 = input("Enter day (Monday/Tuesday/Wednesday/Thursday/Friday/Saturday/Sunday) : ")
+            if option2 in days:
+                print("\nEnter attendance in Y/N format \n")
+                for j in students.keys():
+                    flag3 = 0
+                    while(flag3==0):
+                        option3 = input(j +" : ")
+                        if option3 in ("Y","y"):
+                            students[j][option2]=1
+                            flag3 = 1
+                        elif option3 in ("N","n"):
+                            students[j][option2]=0
+                            flag3 = 1
+                        else:
+                            print("Incorrect input\n Try again")
+                            
+    elif option1 ==2:
+        print("Names\Days")
+        for k in students.keys():
+            print(k,end="\t\t")
+            for day,att in students[k].items():
+                print(day,":",att,end="\t")
+            print()
     
 print("End of the program")
 
