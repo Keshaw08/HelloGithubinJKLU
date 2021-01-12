@@ -633,6 +633,25 @@ while(flag1 == 0):
             for day,att in students[k].items():
                 print(day,":",att,end="\t")
             print()
+
+import numpy as np
+
+matrix = np.random.randint(1,100, size = (5,5))
+print(matrix)
+
+for i in matrix:
+    for j in i:
+        print(j, " : ",end ="")
+        flag = 0
+        for k in matrix:
+            for l in k:
+                if (l%j==0 and l!= j):
+                    print(l,end=", ")
+                    flag = 1
+                    
+        if flag == 0:
+            print("None")
+        print()
     
 print("End of the program")
 
