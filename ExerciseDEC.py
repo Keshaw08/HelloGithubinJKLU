@@ -718,3 +718,59 @@ print(str_list.extend([127,256]))
 print(str_list)
 print(str_list.pop(2))
 print(str_list)
+
+students = {"tony" : {},
+           "raman" : {},
+           "thor"  : {},
+           "wanda" : {},
+           "vision": {},
+           "hulk"  : {},
+           "arther": {},
+           "james" : {},
+           "bucky" : {},
+           "zemo"  : {}
+           }
+flag1 = 0
+days_string = "Monday/Tuesday/Wednesday/Thursday/Friday"
+days = days_string.split("/")
+while(flag1 == 0):
+    print("Choose an option\n1.Add attendance\n2.Display attendance\n3.Display students who has attendance below 75%\n4. Exit.")
+    option1 = int(input("\nEnter your choice : "))
+    if option1 == 1:
+        flag2 = 0
+        while(flag2==0):
+            option2 = input("Enter day (Monday/Tuesday/Wednesday/Thursday/Friday) : ")
+            if option2 in days:
+                print("\nEnter attendance in Y/N format \n")
+                for j in students.keys():
+                    flag3 = 0
+                    while(flag3==0):
+                        option3 = input(j +" : ")
+                        if option3 in ("Y","y"):
+                            students[j][option2]=1
+                            flag3 = 1
+                        elif option3 in ("N","n"):
+                            students[j][option2]=0
+                            flag3 = 1
+                        else:
+                            print("Incorrect input\n Try again")
+                flag2 = 1
+            else:
+                print("Incorrect input \n Try again")
+    elif option1 ==2:
+        print("Names\Days")
+        for k in students.keys():
+            print(k,end="\t\t")
+            for day,att in students[k].items():
+                print(day,":",att,end="\t")
+            print()
+    elif option1 == 3:
+        print("\nStudents who has attendance below than 75% are : \n")
+        for j in students.keys():
+            days_count = len(students[j])
+            if sum(students[j].values())/(0.01*days_count) < 75:
+                print(j)
+    elif option1 ==4:
+        flag1 = 1
+    else:
+        print("Incorrect input \n Re-enter\n")
