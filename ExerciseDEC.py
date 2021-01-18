@@ -787,3 +787,20 @@ while(flag1 == 0):
         return new_price
     
 market(10000,input("Do you have our membership True/False : "))
+
+
+def driving(speed):
+    if (speed <= 70):
+        print("Ok")
+    else:
+        point = 0
+        for i in range(0,200,5):
+            if(speed + i > 70):
+                print("You are going high.")
+                point = point + 1
+                print(point)
+                if(point > 12):
+                    print("License suspended")
+                    break
+
+driving(150)
