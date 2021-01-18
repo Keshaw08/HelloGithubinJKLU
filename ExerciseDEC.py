@@ -774,3 +774,16 @@ while(flag1 == 0):
         flag1 = 1
     else:
         print("Incorrect input \n Re-enter\n")
+        
+    def market(cost,mmshp):
+    cost = int(cost)
+    if(mmshp == True):
+        discount = cost*1/10 + cost*1/5
+        new_price = cost - discount
+        return new_price, "You got extra 5% discount because today is Father's Day"
+    else:
+        discount = cost*1/5
+        new_price = cost - discount
+        return new_price
+    
+market(10000,input("Do you have our membership True/False : "))
