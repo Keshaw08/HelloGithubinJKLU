@@ -656,6 +656,20 @@ for i in matrix:
 print("End of the program")
 
 
+import math
 
+def circle(radius):
+    #for incircle for big square
+    a = 2*radius
+    area_big_square = (a)**2
+    
+    #for circumcircle for smaller square
+    b = (2/math.sqrt(2))*radius
+    area_sml_square = (b)**2
+    
+    diff_big_small = area_big_square - area_sml_square
+    return "The differance between big circle and small circle : ", diff_big_small
+
+circle(8)
 
 
