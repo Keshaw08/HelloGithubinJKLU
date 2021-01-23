@@ -673,3 +673,21 @@ def circle(radius):
 circle(8)
 
 
+listA = [1,4,9,16,25,36,49,64,81,100]
+new_list = []
+
+def list_rock_roll(listA,k,direction):
+    for i in range(len(listA)):
+        k = int(k)
+        if(direction == "left"):
+            new_list.extend(listA[k:])
+            new_list.extend(listA[:k])
+            print(new_list)
+            break
+        else:
+            new_list.insert(0,listA[k:k+k:])
+            new_list.insert(1,listA[:k])
+            new_list.insert(2,listA[k+k:])
+            print(new_list)
+            break
+list_rock_roll(listA,input("how much do you want to shift : "),input("which direction left/right : "))
