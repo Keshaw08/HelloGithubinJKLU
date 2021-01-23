@@ -691,3 +691,20 @@ def list_rock_roll(listA,k,direction):
             print(new_list)
             break
 list_rock_roll(listA,input("how much do you want to shift : "),input("which direction left/right : "))
+
+
+def driving(speed):
+    if (speed <= 70):
+        print("Ok")
+    else:
+        point = 0
+        for i in range(0,200,5):
+            if(speed + i > 70):
+                print("You are going high.")
+                point = point + 1
+                print(point)
+                if(point > 12):
+                    print("License suspended")
+                    break
+
+driving(150)
