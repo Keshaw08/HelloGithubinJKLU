@@ -708,3 +708,11 @@ def driving(speed):
                     break
 
 driving(150)
+
+list1 = df["company"].tolist()
+list_set = set(list1)
+cars_per_company = {}
+
+for i in list_set:
+    cars_per_company[i] = list1.count(i)
+print(cars_per_company)
