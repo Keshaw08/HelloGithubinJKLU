@@ -749,3 +749,19 @@ for i in range(10,20):
     listB.append(rn_arr[i][3])
 print(listB)
 print(sum(listB)/len(listB))
+
+math_marks = [88,92,80,89,100,80,60,100,80,34]
+chemistry_marks = [35,79,79,48,100,88,32,45,20,30]
+physics_marks = [45,76,67,56,89,76,42,54,30,35]
+
+plt.subplot(3,1,1)
+plt.bar(math_marks, chemistry_marks,color = "red",alpha = 0.3,width = 6.5,label = "Graph of Maths and Chemistry")
+
+
+plt.subplot(3,1,2)
+plt.bar(math_marks, physics_marks,color = "magenta", width = 6.5,alpha = 0.4, label = "Graph of Maths and Physics")
+
+
+plt.subplot(3,1,3)
+plt.bar(physics_marks,chemistry_marks, alpha = 0.5,color = "green", width = 6.5, label = "Graph of Physics and Chemistry")
+plt.show()
