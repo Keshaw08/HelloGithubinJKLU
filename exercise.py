@@ -728,3 +728,24 @@ for i in range(len(listB)):
         price_low.append(listB[i])
         
 print(listA," --> ",price_low)
+
+import numpy as np
+
+rn_arr = np.random.randint(1,50000,(20,5))
+print(rn_arr)
+
+#(a) - Find the average value of second column.
+listA = []
+for i in range(20):
+    listA.append((rn_arr[i][1]))
+print(listA)
+df = pd.DataFrame([listA])
+print(sum(df)/len(df))
+
+#(b) - Find the average value of the last 10 rows of the third and fourth colulmns.
+listB = []
+for i in range(10,20):
+    listB.append(rn_arr[i][2])
+    listB.append(rn_arr[i][3])
+print(listB)
+print(sum(listB)/len(listB))
