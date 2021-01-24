@@ -716,3 +716,15 @@ cars_per_company = {}
 for i in list_set:
     cars_per_company[i] = list1.count(i)
 print(cars_per_company)
+
+listA = df["company"].tolist()
+listB = df["price"].tolist()
+price_low = []
+
+for i in range(len(listB)):
+    if(listB[i-1] < listB[i]):
+        price_low.append(listB[i-1])
+    else:
+        price_low.append(listB[i])
+        
+print(listA," --> ",price_low)
