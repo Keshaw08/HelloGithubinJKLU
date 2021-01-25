@@ -765,3 +765,20 @@ plt.bar(math_marks, physics_marks,color = "magenta", width = 6.5,alpha = 0.4, la
 plt.subplot(3,1,3)
 plt.bar(physics_marks,chemistry_marks, alpha = 0.5,color = "green", width = 6.5, label = "Graph of Physics and Chemistry")
 plt.show()
+
+
+A = []
+def pro_ins():
+    n = int(input("For how many days you Worked : "))
+    for i in range(1,n+1):
+        A.append(i)
+    for j in range(len(A[0:32])):
+        j =  j*0
+    for k in range(len(A[32:40])+1):
+        k = k*325
+    for l in range(len(A[40:48])+1):
+        l = l*550
+    for h in range(len(A[48:n])+1):
+        h = h*600
+    print("Incentive = ",j+k+l+h)
+pro_ins()
