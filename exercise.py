@@ -817,3 +817,20 @@ for i in range(10):
     for j in range(10):
         listC.extend("0")
 print(listC)
+
+my_list = [1.6,2.7,3.8,4.9]
+new_list = []
+a_list = []
+
+for i in my_list:
+    temp = str(i)
+    a_list.append(temp.split("."))
+for i in a_list:
+    new_list.append(int(i[0]))
+my_str = ":".join(i)
+
+print(my_list)
+print(a_list)
+print(new_list)
+print(i)
+print(my_str)
