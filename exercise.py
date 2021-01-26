@@ -834,3 +834,16 @@ print(a_list)
 print(new_list)
 print(i)
 print(my_str)
+
+list1 = ["hi","mom","dad",["grandma","grandpa"]]
+list2 = list1
+copy_list = list1[:]
+
+list1[0] = "bye"
+list2[1] = "mother"
+copy_list[2] = "father"
+copy_list[-1][0] = "nanna"
+
+print(list1)
+print(list2)
+print(copy_list)
