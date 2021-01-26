@@ -790,3 +790,9 @@ for num in ListA:
 listA[2]=10
 print(ListB[2])
 print(ListB)
+
+list1 = [1,2,99]
+list2 = list1[:]
+list3 = list2
+list1=list1.remove(1)
+print(list3)
