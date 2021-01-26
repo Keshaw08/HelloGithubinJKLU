@@ -782,3 +782,11 @@ def pro_ins():
         h = h*600
     print("Incentive = ",j+k+l+h)
 pro_ins()
+
+ListA = [1,2,3,4,5]
+ListB = []
+for num in ListA:
+    ListB.append(num)
+listA[2]=10
+print(ListB[2])
+print(ListB)
