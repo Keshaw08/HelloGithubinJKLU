@@ -801,3 +801,19 @@ listD = []
 for i in range(1,101):
     listD.insert(i,i)
 print(listD)
+
+listA = []
+listB = []
+listC = []
+for i in range(0,100):
+    listA.append(0)
+print(listA)
+i = 0
+while i < 100:
+    listB.insert(0,0)
+    i = i+1
+print(listB)
+for i in range(10):
+    for j in range(10):
+        listC.extend("0")
+print(listC)
