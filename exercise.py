@@ -847,3 +847,19 @@ copy_list[-1][0] = "nanna"
 print(list1)
 print(list2)
 print(copy_list)
+
+def f1 (s1,s2,op=4):
+    if(op == 1):
+        temp = s1.intersection(s2)
+    elif(op == 2):
+        temp = s1.difference(s2)
+    else:
+        temp = s1.union(s2)
+    return temp
+
+set1 = {"ab"}
+set2 = {"cd"}
+
+print(f1(set1,set2))
+print(f1(set1,set2,1))
+print(f1(set1,set2,2))
