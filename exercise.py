@@ -896,3 +896,9 @@ print(x)
 n = int(input("how much seconds : "))
 for i in range(1,n+1,10):
     print("X")
+
+x = "acegikmoqsuwy"
+y = "bdfhjlnprtvxz"
+
+z = x[1] + x[2] + y[5] + y[5]
+print(z)
