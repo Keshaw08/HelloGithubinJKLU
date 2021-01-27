@@ -886,3 +886,9 @@ a_dict = {"bill":1, "rich":2,"fred":10,"walter":20}
 #print(f2(a_dict))
 print(None == f3(a_dict,"bill",-1))
 #print(a_dict)
+
+x = ["hi","mello","job"]
+z = tuple(x)
+x[1] = "mom"
+print(z)
+print(x)
