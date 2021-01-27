@@ -902,3 +902,17 @@ y = "bdfhjlnprtvxz"
 
 z = x[1] + x[2] + y[5] + y[5]
 print(z)
+
+number = int(input("Enter an inte : "))
+count = 0
+
+while number > 0:
+    if number%2==0:
+        number = number//2
+    elif number%3==0:
+        number = number//3
+    else:
+        number = number -1
+    count = count + 1
+print("Count is : ",count)
+print("Number is : ",number)
