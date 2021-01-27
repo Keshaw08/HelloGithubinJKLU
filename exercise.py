@@ -892,3 +892,7 @@ z = tuple(x)
 x[1] = "mom"
 print(z)
 print(x)
+
+n = int(input("how much seconds : "))
+for i in range(1,n+1,10):
+    print("X")
