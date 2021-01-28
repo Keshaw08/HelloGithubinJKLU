@@ -928,3 +928,15 @@ while my_int > 0:
     count = count + 1 # Line 2
 print(count) # Line 3
 print(my_int) # Line 4
+
+def swap_case(s):
+    z = ""
+    for i in range(len(s)):
+        if(s[i].isupper()):
+            z = z +  s[i].lower()
+        elif(s[i].islower()):
+            z = z +  s[i].upper()
+        else:
+            z = z + s[i]
+        
+    return z
