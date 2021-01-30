@@ -1021,3 +1021,11 @@ gdp_growth = pd.read_csv("GDP_Growth.csv")
 df = pd.DataFrame(gdp_growth)
 df.index=(range(1,12))
 df
+
+import matplotlib.pyplot as plt
+
+x = df["GDP Billions"]
+
+plt.plot(x,'o-b',ms = 10 , mec = "red", linestyle = "-.",alpha = 0.8)
+plt.title("GDP of India from 2009 to 2019")
+plt.show()
