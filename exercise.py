@@ -1029,3 +1029,8 @@ x = df["GDP Billions"]
 plt.plot(x,'o-b',ms = 10 , mec = "red", linestyle = "-.",alpha = 0.8)
 plt.title("GDP of India from 2009 to 2019")
 plt.show()
+
+y = df["Per Capita"]
+plt.pie(y, labels = df["Year"],shadow = True ,radius = 1.1)
+plt.title('Per Capita Income from 2009 to 2019')
+plt.show()
