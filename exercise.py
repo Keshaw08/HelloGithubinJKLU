@@ -1013,3 +1013,11 @@ plt.title("Annual Change in GDP of India from 2009 to 2019")
 plt.ylabel("one unit in billions")
 plt.xlabel("Years")
 plt.show()
+
+import pandas as pd
+import numpy as np
+
+gdp_growth = pd.read_csv("GDP_Growth.csv")
+df = pd.DataFrame(gdp_growth)
+df.index=(range(1,12))
+df
