@@ -1002,3 +1002,14 @@ if __name__ == '__main__':
     elif function_calling == 3:
         moves = look_for_moves(field,char="-",reverse=True)
     print('\n'.join(moves))
+
+import matplotlib.pyplot as plt
+
+x = df["Annual Change"]
+y = df["Year"]
+
+plt.bar(y,x, color = "yellow", alpha = 0.7)
+plt.title("Annual Change in GDP of India from 2009 to 2019")
+plt.ylabel("one unit in billions")
+plt.xlabel("Years")
+plt.show()
