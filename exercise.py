@@ -1045,3 +1045,10 @@ def is_leap(year):
         leap = False
     return leap
 is_leap(2100)
+
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    for i in range(1,n+1):
+        t = (1,i)
+    print(hash(t))
