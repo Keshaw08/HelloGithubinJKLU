@@ -1034,3 +1034,14 @@ y = df["Per Capita"]
 plt.pie(y, labels = df["Year"],shadow = True ,radius = 1.1)
 plt.title('Per Capita Income from 2009 to 2019')
 plt.show()
+
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    if(year%4==0 or year%100!=0 and year%400==0):
+        leap = True
+    else:
+        leap = False
+    return leap
+is_leap(2100)
