@@ -1055,3 +1055,8 @@ if __name__ == '__main__':
 
 v = df["GDP Growth"].var()
 m = df["GDP Growth"].mean()
+
+s = df["GDP Growth"].std()
+n = 11
+t = (7 - m)/(s/math.sqrt(n))
+print(t)
