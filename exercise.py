@@ -1052,3 +1052,6 @@ if __name__ == '__main__':
     for i in range(1,n+1):
         t = (1,i)
     print(hash(t))
+
+v = df["GDP Growth"].var()
+m = df["GDP Growth"].mean()
