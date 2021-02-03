@@ -1060,3 +1060,25 @@ s = df["GDP Growth"].std()
 n = 11
 t = (7 - m)/(s/math.sqrt(n))
 print(t)
+
+def str_pos_encode(x):
+    for i in x:
+        for j in i:
+            if (j != " "):
+                z = ord(j)
+                n = z + 1
+                r = chr(n)
+            else:
+                r = j
+        print(r,end='')
+            
+def str_neg_encode(x):
+    for i in x:
+        for j in i:
+            if (j != " "):
+                z = ord(j)
+                n = z - 1
+                r = chr(n)
+            else:
+                r = j
+        print(r,end='')
