@@ -1082,3 +1082,10 @@ def str_neg_encode(x):
             else:
                 r = j
         print(r,end='')
+
+movie_collc = {"Action":["FnF","MI","Terminator"],"Sci-Fi":["Iron man","Avengers 1-4"],"Comedy":["Baby's day out","3-idiots"]}
+
+n = input("Which Type - Action/Comedy/Sci-Fi : ")
+for i in movie_collc.keys():
+    if(i == n):
+        print(movie_collc[n])
