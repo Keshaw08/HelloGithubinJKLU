@@ -1089,3 +1089,12 @@ n = input("Which Type - Action/Comedy/Sci-Fi : ")
 for i in movie_collc.keys():
     if(i == n):
         print(movie_collc[n])
+
+listA = ["Harry","Ron","Dobby","Hulk","Thor"]
+
+for i in listA:
+    if(i[1] == "a" or i[1] == "o"):
+        z = ord(i[1])
+        n = z + 2
+        r = chr(n)
+        print(r)
