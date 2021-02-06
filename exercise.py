@@ -1105,3 +1105,12 @@ s = str(input("tell me a string : "))
 for i in range(len(s)):
     listA.append(s[i])
 print(''.join(listA))
+
+listA = [10,20,30,40,50]
+listA = [0,0] + listA + [0,0]
+listB = []
+l = len(listA)
+for i in range(2,l-2):
+    sumz = sum(listA[i-2:i+3])
+    listB.append(sumz)
+print(listB)
