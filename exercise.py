@@ -1129,3 +1129,10 @@ print(b)
 for k in range(25):
     c.insert(i,1)
 print(c)
+
+L = [1,2,3,4]
+s = ""
+for i in L:
+    s = s + str(i)
+    
+print(s)
