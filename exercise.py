@@ -1114,3 +1114,18 @@ for i in range(2,l-2):
     sumz = sum(listA[i-2:i+3])
     listB.append(sumz)
 print(listB)
+
+a = []
+b = []
+c = []
+for i in range(25):
+    a.append(1)
+print(a)
+
+for j in range(25):
+    b.extend("1")
+print(b)
+
+for k in range(25):
+    c.insert(i,1)
+print(c)
