@@ -1098,3 +1098,10 @@ for i in listA:
         n = z + 2
         r = chr(n)
         print(r)
+
+listA = []
+s = str(input("tell me a string : "))
+
+for i in range(len(s)):
+    listA.append(s[i])
+print(''.join(listA))
