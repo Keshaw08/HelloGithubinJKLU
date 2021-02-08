@@ -1165,3 +1165,9 @@ for i in range(0,41,2):
     A.append(i)
     
 print(A)
+
+myList = ["1","2","3","4","5"]
+
+for z in range(0,len(myList)):
+    text = ''.join(myList[z])
+    print(text.center(10))
