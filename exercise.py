@@ -1176,3 +1176,9 @@ y = df["Male"]
 z = df["Education"]
 plt.pie(y,labels = z)
 plt.show()
+
+b = df["Male"]
+t = df["Education"]
+
+plt.bar(b,t)
+plt.show()
