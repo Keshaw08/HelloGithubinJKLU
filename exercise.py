@@ -1171,3 +1171,8 @@ myList = ["1","2","3","4","5"]
 for z in range(0,len(myList)):
     text = ''.join(myList[z])
     print(text.center(10))
+
+y = df["Male"]
+z = df["Education"]
+plt.pie(y,labels = z)
+plt.show()
