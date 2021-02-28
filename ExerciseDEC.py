@@ -810,3 +810,9 @@ L = [1,2,3,4]
 for i in L:
 #    r = "".join(i)
     print(i,end="")
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
+listb = []
+for i in range(len(list1),0,-1):
+    listb.append(i)
+    print(listb)
