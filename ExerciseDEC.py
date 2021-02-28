@@ -804,3 +804,9 @@ def driving(speed):
                     break
 
 driving(150)
+
+L = [1,2,3,4]
+
+for i in L:
+#    r = "".join(i)
+    print(i,end="")
