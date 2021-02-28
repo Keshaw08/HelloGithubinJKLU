@@ -816,3 +816,10 @@ listb = []
 for i in range(len(list1),0,-1):
     listb.append(i)
     print(listb)
+
+e = (3,5,"k","P","0","A","a")
+def sortu(z):
+    z.sort()
+    return z
+
+print(e)
