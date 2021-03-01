@@ -829,3 +829,8 @@ def revstr(s):
         print(s[i],end="")
         
 revstr("stressed")
+
+L = ['Always', 'look', 'on', 'the', 'bright', 'side', 'of', 'life.']
+
+List1=[[i.upper(), i.lower(), len(i)] for i in L if len(i)>4]
+print(List1)
