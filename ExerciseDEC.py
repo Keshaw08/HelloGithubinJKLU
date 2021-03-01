@@ -844,3 +844,9 @@ for i in range(1,n+1):
 n = int(input("Tell me a number : "))
 z = [[n%i==0] for i in range(1,n+1)]
 print(z)
+
+L = [23,44,55,76]
+k = [i for i in L if(i%2==0)]
+b = [j for j in L if(j%3==0 or j%5==0 or j%7==0 or j%13==0 or j%17==0 or j%23==0)]
+print("For Even number : ",sum(k))
+print("For Odd number : ",sum(b))
