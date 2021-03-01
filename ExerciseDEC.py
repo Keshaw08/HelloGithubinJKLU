@@ -861,3 +861,14 @@ for i in range(10):
     l.append(i)
     
 print(sum(l))
+
+l = []
+n = []
+def strn(s):
+    for i in s:
+        l.append(i)
+        l.sort()
+        n.append(i)
+    print("".join(l))
+    print("".join(n))
+strn("hello")
