@@ -823,3 +823,9 @@ def sortu(z):
     return z
 
 print(e)
+
+def revstr(s):
+    for i in range(len(s)-1,-1,-1):
+        print(s[i],end="")
+        
+revstr("stressed")
