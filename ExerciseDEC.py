@@ -854,3 +854,10 @@ print("For Odd number : ",sum(b))
 x = "January 1, 2000"
 t = [i for i in x if(i.isalpha())]
 print("".join(t))
+
+Tuple = ()
+l = list(Tuple)
+for i in range(10):
+    l.append(i)
+    
+print(sum(l))
