@@ -908,3 +908,11 @@ def transform(list1,list2,r1,r2):
     print(list2)
     
 transform(list1,list2,4,7)
+
+'''. Fractions:
+You can express a fraction as a tuple: (numerator, denominator).
+(a) Write a function that adds two fractions that are passed as tuples.
+(b) Write a function that multiplies two fractions that are passed as tuples.'''
+def adds(t1,t2):
+    return t1 + t2
+adds((2.5),(7.3))
