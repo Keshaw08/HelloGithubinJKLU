@@ -941,3 +941,15 @@ def min_max(y):
     print("Min : ",min(mn))
     
 min_max(y)
+
+'''Write a function that takes a string as an argument and returns a list of the words in
+the string'''
+s = input("Tell me a word : ")
+t = []
+
+def stot(s):
+    for i in s:
+        t.append(i)
+    print(t)
+    
+stot(s)
