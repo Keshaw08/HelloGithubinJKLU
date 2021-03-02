@@ -920,3 +920,24 @@ adds((2.5),(7.3))
 def sums(t3,t4):
     return t3 * t4
 sums((2.4),(1.2))
+
+
+'''. Write your own versions of the Python built-in functions min and max. They should
+take a list as an argument and return the minimum or maximum element. Hint: Pick
+the first element as the minimum (maximum) and then loop through the elements to
+find a smaller (larger) element. Each time you find a smaller (larger) element, update
+your minimum (maximum).'''
+y = [23,44,55,21]
+mn = []
+mx = []
+
+def min_max(y):
+    for i in range(len(y)):
+        if(y[i] > y[i-1]):
+            mx.append(y[i])
+        else:
+            mn.append(y[i])
+    print("Max : ",max(mx))
+    print("Min : ",min(mn))
+    
+min_max(y)
