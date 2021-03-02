@@ -916,3 +916,7 @@ You can express a fraction as a tuple: (numerator, denominator).
 def adds(t1,t2):
     return t1 + t2
 adds((2.5),(7.3))
+
+def sums(t3,t4):
+    return t3 * t4
+sums((2.4),(1.2))
