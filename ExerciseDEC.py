@@ -872,3 +872,20 @@ def strn(s):
     print("".join(l))
     print("".join(n))
 strn("hello")
+
+'''Given a list of numbers, create a new list of numbers such that the first and last
+numbers are added and stored as the first number, the second and second-to-last
+numbers are stored as the second number, and so on. Note that you need to check
+for even and odd length of lists. In case of an odd number of integers, leave the central
+integer in the original list as it is.'''
+list1 = [2,6,8,10,12,14]
+list2 = []
+
+def listchng(list1):
+    if (len(list1)%2==0):
+        list1.sort(reverse = True)
+        for i in list1:
+            list2.append(i)
+        return list2
+
+listchng(list1)
