@@ -953,3 +953,20 @@ def stot(s):
     print(t)
     
 stot(s)
+
+
+'''Given a list of N numbers, write a function to shift the numbers circularly by some
+integer k (where k < N). The function should take a list and k as a arguments and
+return the shifted list.
+(a) Write a function that assumes shifting is to the left.
+(b) Write a function that takes a third argument that specifies shifting left or right.'''
+list1 = [1,3,5,7,9,11,13,15]
+list2 = []
+def list_cir(list1,k):
+    for i in range(k,len(list1)):
+        list2.append(list1[i])
+    print(list2)
+    for i in range(k):
+        list2.append(list1[i])
+    print(list2)
+list_cir(list1,3)
