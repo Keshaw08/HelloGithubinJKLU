@@ -24,3 +24,29 @@ public class election{
 		}	
 	}
 }
+
+import java.util.*;
+public class leapyear{
+	public static void main(String arg[])
+	{
+		Scanner lp = new Scanner(System.in);
+		System.out.println("Please Enter the year : ");
+		int l_year = lp.nextInt();
+		if (l_year%4==0){
+			if(l_year%100==0){
+				if(l_year%400==0){
+					System.out.println(l_year + " : is a leap year");
+				}
+				else{
+					System.out.println(l_year + " : is not a leap year");
+				}
+			}
+			else{
+				System.out.println(l_year + " : is a leap year");
+			}
+		}
+		else{
+			System.out.println(l_year + " : is not a leap year");
+		}
+	}
+}
