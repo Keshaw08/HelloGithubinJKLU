@@ -50,3 +50,41 @@ public class leapyear{
 		}
 	}
 }
+
+
+/* Restourent Thali */
+
+import java.util.*;
+public class rst_mnu{
+	public static void main (String arg[])
+	{
+		Scanner pp = new Scanner(System.in);
+		System.out.println("Please tell me you Budget : ");
+		int price = pp.nextInt();
+		if (price >= 50){
+			switch(price){
+				case 50:
+					System.out.println("The Basic Thali");
+					break;
+				case 150:
+					System.out.println("The silver Thali");
+					break;
+				case 250:
+					System.out.println("The Premium Thali");
+					break;
+				case 400:
+					System.out.println("The Royal Thali");
+					break;
+				case 550:
+					System.out.println("The Royal Rajwadi Thali (out best yet)");
+					break;
+				default:
+					System.out.println("you have our daal baati");
+			}	
+
+		}
+		else{
+			System.out.println("our Hotel Menu Start from 50 ");
+		}
+}
+}
