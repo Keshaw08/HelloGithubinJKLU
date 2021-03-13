@@ -87,4 +87,18 @@ public class rst_mnu{
 			System.out.println("our Hotel Menu Start from 50 ");
 		}
 }
+
+?/* Nothing */
+
+}import java.util.*;
+public class nothing{
+	public static void main(String arg[]){
+		Scanner nt = new Scanner(System.in);
+		System.out.println("Enter nothing to continue : ");
+		String not = nt.nextLine();
+		if (not == " "){
+			System.out.println("You got Nothing");
+		}
+	}
+
 }
