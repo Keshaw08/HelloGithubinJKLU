@@ -188,3 +188,26 @@ public class Solution {
         scanner.close();
     }
 }
+
+import java.util.*;
+public class Exercises {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give me two values and i will find the sum b/w them (1 to 9) : ");
+		int a = np.nextInt();
+		int b = np.nextInt();
+		System.out.println(sum1(a,b));
+		System.out.println(fact(a));
+	}
+	public static int sum1(int a , int b) {
+		int sumx  = 0; 
+		for(int i = a; i <= b; i++) {
+			sumx = sumx + i;
+		
+		}
+		System.out.print("The sum of values b/w them is : ");
+		return sumx;
+	}
+	
