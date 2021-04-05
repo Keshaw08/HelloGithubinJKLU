@@ -260,3 +260,36 @@ public class Exercises {
 		
 	}
 }
+
+import java.util.Scanner;
+
+class Complex{
+	int c1_r,c2_r,c1_i,c2_i;
+	public int add_real(){
+		return c1_r + c2_r;
+	}
+	public int add_img() {
+		return c1_i + c2_i;
+	}
+	
+}
+
+public class MyComplex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Complex aCom = new Complex();
+		Scanner ns = new Scanner(System.in);
+		System.out.println("Tell me number real part of c1 : ");
+		aCom.c1_r = ns.nextInt();
+		System.out.println("Tell me number real part of c2 : ");
+		aCom.c2_r = ns.nextInt();
+		System.out.println("Tell me number img part of c2 : ");
+		aCom.c1_i = ns.nextInt();
+		System.out.println("Tell me number img part of c2 : ");
+		aCom.c2_i = ns.nextInt();
+		
+		System.out.println("The sum of complex number is : "+ aCom.add_real() + " + "+aCom.add_img() + "i");
+	}
+
+}
