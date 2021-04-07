@@ -293,3 +293,16 @@ public class MyComplex {
 	}
 
 }
+
+import java.util.*;
+import java.math.BigInteger;
+public class BigInt{
+	public static void main(String args[]){
+		Scanner ns = new Scanner(System.in);
+		System.out.println("give me two numbers : 
+        	BigInteger a = ns.nextBigInteger();
+        	BigInteger b = ns.nextBigInteger();
+        	System.out.println(a.add(b));
+        	System.out.println(a.multiply(b));	
+	}
+}
