@@ -306,3 +306,17 @@ public class BigInt{
         	System.out.println(a.multiply(b));	
 	}
 }
+
+
+Scanner nw = new Scanner(System.in);
+		System.out.println("give a number and n : ");
+		int a = nw.nextInt();
+		int b = nw.nextInt();
+		int c = 0;
+		
+		for (int i = 0; i <= a; i++) {
+			for (int j = 0; j <= a; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
