@@ -322,9 +322,14 @@ Scanner nw = new Scanner(System.in);
 		}
 
 
-int arr4[] = {2,3,1,7,8,4,6,2,3};
+		int arr4[] = {2,3,1,7,8,4,6,2,3};
 		for(int t=0; t<arr4.length;t++) {
-			if(arr4[t] < 5) {
-				System.out.println(arr4[t]);
+		if(arr4[t] < 5) {
+		System.out.println(arr4[t]);
 			}
+		}
+
+String arr3[] = {"lakshit ", "pari"};
+		for(int j =0 ; j<arr3.length;j++) {
+			System.out.println(j + " : "+ arr3[j]);
 		}
