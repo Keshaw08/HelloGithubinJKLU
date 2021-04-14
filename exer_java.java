@@ -333,3 +333,15 @@ String arr3[] = {"lakshit ", "pari"};
 		for(int j =0 ; j<arr3.length;j++) {
 			System.out.println(j + " : "+ arr3[j]);
 		}
+
+
+int arr1[] = new int [5];
+		String arr2[] = new String[5];
+		for (int i=0; i<arr1.length; i++) {
+			arr2[2] = "Hello";
+			arr1[1] = 23;
+			System.out.println(i + " : " + arr1[i]);
+			System.out.println(i + " : " + arr2[i]);
+			System.out.println(arr1[i] + " : "+ arr2[i]);
+		}
+		
