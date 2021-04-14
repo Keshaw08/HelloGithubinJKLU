@@ -320,3 +320,11 @@ Scanner nw = new Scanner(System.in);
 			}
 			System.out.println();
 		}
+
+
+int arr4[] = {2,3,1,7,8,4,6,2,3};
+		for(int t=0; t<arr4.length;t++) {
+			if(arr4[t] < 5) {
+				System.out.println(arr4[t]);
+			}
+		}
