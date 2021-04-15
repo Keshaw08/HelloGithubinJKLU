@@ -1182,3 +1182,15 @@ t = df["Education"]
 
 plt.bar(b,t)
 plt.show()
+
+
+a = int(input("tell me five integer : "))
+b = int(input("tell me five integer : "))
+c = int(input("tell me five integer : "))
+d = int(input("tell me five integer : "))
+e = int(input("tell me five integer : "))
+f = int()
+
+if(b/a == d/c and e/d == d/c):
+    f = e*b/a
+print("The next number is : ",f)
