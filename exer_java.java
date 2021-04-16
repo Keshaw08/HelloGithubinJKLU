@@ -345,3 +345,18 @@ int arr1[] = new int [5];
 			System.out.println(arr1[i] + " : "+ arr2[i]);
 		}
 		
+
+public class findname{
+	Static void main (String args[]){
+		Scanner nm = new Scanner(System.in);
+	        String a = nm.next();
+	        
+	        if(a.charAt(0) == 'A' || a.charAt(0) == 'Y' || a.charAt(0) == 'D' || a.charAt(0) == 'F' || a.charAt(0) == 'J' || a.charAt(0) == 'K'){
+	            System.out.println(25);
+	        }else if (a.charAt(0) == 'H' || a.charAt(0) == 'I' || a.charAt(0) == 'N' || a.charAt(0) == 'P' || a.charAt(0) == 'V'){
+	            System.out.println(50);
+	        }else{
+	            System.out.println(15);
+	        }
+	}
+}
