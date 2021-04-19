@@ -360,3 +360,11 @@ public class findname{
 	        }
 	}
 }
+
+public static int print1_10(int n) {
+		if(n==3) {
+			return 3;
+		}
+		System.out.println(print1_10(n-3));
+		return n;
+	}
