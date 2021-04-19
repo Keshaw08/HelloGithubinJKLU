@@ -368,3 +368,12 @@ public static int print1_10(int n) {
 		System.out.println(print1_10(n-3));
 		return n;
 	}
+
+public static int print3_8(int b) {
+		if (b == 3){
+			return 3;
+		}
+		int ret =  print3_8(b-1);
+		System.out.println(ret);
+		return b;
+	}
