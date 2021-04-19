@@ -377,3 +377,12 @@ public static int print3_8(int b) {
 		System.out.println(ret);
 		return b;
 	}
+
+public static int print5_50(int a) {
+		if(a == 5) {
+			return 5;
+		}
+		int rett = print5_50(a-5);
+		System.out.println(rett);
+		return a;
+	}
