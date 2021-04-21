@@ -386,3 +386,13 @@ public static int print5_50(int a) {
 		System.out.println(rett);
 		return a;
 	}
+
+
+int arr1[] = new int[5];
+		int arr2[] = new int[6];
+		for(int i = 0; i<arr1.length;i++) {
+			arr1[i] = i+'@';
+			arr2[i] = i+(i*i);
+			System.out.println(i+" : "+arr1[i]);
+			System.out.println(i+" : "+arr2[i]);
+		}
