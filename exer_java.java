@@ -396,3 +396,13 @@ int arr1[] = new int[5];
 			System.out.println(i+" : "+arr1[i]);
 			System.out.println(i+" : "+arr2[i]);
 		}
+
+
+public static int f_table(int n) {
+		if(n==80) {
+			return 80;
+		}
+		int ret = f_table(n+8);
+		System.out.println(ret);
+		return n;
+	}
