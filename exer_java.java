@@ -450,3 +450,82 @@ class mycircle{
 		System.out.println("area of D-circle : "+Dcircle.area());
 	}
 }
+
+class mobile{
+	int ram, sto, fcam, rcam, price;
+	
+	mobile(int ram1, int sto1, int fcam1,int rcam1, int price1){
+		ram = ram1;
+		sto = sto1;
+		fcam = fcam1;
+		rcam = rcam1;
+		price = price1;
+	}
+
+	mobile(){
+		ram = 2;
+		sto = 8;
+		fcam = 5;
+		rcam = 8;
+		price = 5000;
+	}
+
+	mobile(int ram2 , int price2){
+		ram = ram2;
+		sto = 8;
+		fcam= 5;
+		rcam = 8;
+		price = price2;
+	}
+
+	mobile(int ram3, int sto3, int price3){
+		ram = ram3;
+		sto = sto3;
+		fcam = 5;
+		rcam = 8;
+		price = price3;
+	}
+	
+	mobile(int ram4 , int sto4 , int rcam4, int price4){
+		ram = ram4;
+		sto = sto4;
+		fcam = 5;
+		rcam = rcam4;
+		price = price4;
+	}
+
+}
+
+class myphone{
+	public static void main(String args[]){
+	
+	mobile samsung;
+	mobile nokia;
+	mobile htc;
+	mobile moto;
+	mobile iphone;
+
+	samsung = new mobile(4,16,5,12,12000);
+	nokia = new mobile();
+	htc = new mobile(4, 7000);
+	moto = new mobile(5, 16, 9000);
+	iphone = new mobile(6,32,16,13000);
+
+	if(samsung.rcam > nokia.rcam){
+		int best;
+		best =  samsung.rcam;
+		System.out.println("The best Front camera is of samsung(mp) : " +samsung.fcam);
+		System.out.println("Storage of Samsung(gb) : "+ samsung.sto);
+		System.out.println("Rear camera of Samsung(mp) : " +samsung.rcam);
+		System.out.println("Price of Samsung(rs) : "+samsung.price);
+		System.out.println("Ram of Samsung(gb) : "+samsung.ram);
+	}
+	
+	System.out.println();
+	System.out.println("samsung price : " + samsung.price);
+	System.out.println("nokia Price : "+nokia.price);
+	System.out.println("htc price : "+htc.price);
+	System.out.println("moto price : "+moto.price);
+	System.out.println("iphone price : "+iphone.price);
+	}
+}
