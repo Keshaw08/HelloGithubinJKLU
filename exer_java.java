@@ -406,3 +406,47 @@ public static int f_table(int n) {
 		System.out.println(ret);
 		return n;
 	}
+
+
+class circle{
+	double x,y,r;
+	double circum(){
+		return 2*3.14*r;
+	}
+	double area(){
+		return 3.14*r*r;
+	}
+	circle (double x1, double y1, double r1){
+		x= x1;
+		y= y1;
+		r=r1;
+	}
+	circle (){
+		x =0;
+		y = 0;
+		r = 1;
+	}
+	circle(double y2, double r2){
+		x=5;
+		y = y2;
+		r = r2;
+	}
+}
+
+class mycircle{
+	public static void main(String args[]){
+		circle Acircle;
+		circle Bcircle;
+		circle Ccircle;
+		circle Dcircle;
+		Acircle = new circle(10,20,5);
+		Bcircle = new circle(20,30,10);
+		Ccircle = new circle();
+		Dcircle = new circle(15,6);
+		System.out.println("area : "+Acircle.area());
+		System.out.println("circumferrence : " + Acircle.circum());
+		System.out.println("area of Bcircle : "+Bcircle.area());
+		System.out.println("area of c-circle : "+Ccircle.area());
+		System.out.println("area of D-circle : "+Dcircle.area());
+	}
+}
