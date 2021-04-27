@@ -529,3 +529,51 @@ class myphone{
 	System.out.println("iphone price : "+iphone.price);
 	}
 }
+
+
+import java.util.*;
+
+class subject{
+	String nm, batch;
+	int roll;
+	double mathnum, phynum, chemnum;
+	
+	double add(){
+		double sum = mathnum + phynum + chemnum;
+		System.out.println("Total : "+sum+"/300");
+		return sum/300;
+	}
+	
+	subject(String nm1 , String batch1){
+		nm = nm1;
+		batch = batch1;
+		mathnum = 33;
+		phynum = 33;
+		chemnum = 33;
+	}
+	
+}
+
+public class students {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner np = new Scanner(System.in);
+		System.out.println("What is name & Batch of Student : ");
+		String a = np.next();
+		String b = np.next();
+		subject Asubject;
+		Asubject = new subject(a,b);
+		
+		System.out.println("==========Score Card==========");
+		System.out.println();
+		System.out.println("Mathematics : "+ Asubject.mathnum);
+		System.out.println("Physics : "+ Asubject.phynum);
+		System.out.println("Chemistry : "+ Asubject.chemnum);
+		System.out.println();
+		System.out.println("Percantage : "+ Asubject.add());
+		System.out.println();
+		System.out.println("==============================");
+	}
+
+}
