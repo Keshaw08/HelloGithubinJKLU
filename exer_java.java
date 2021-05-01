@@ -551,6 +551,13 @@ class subject{
 		phynum = 33;
 		chemnum = 33;
 	}
+	subject(String nm1 , int roll1, double math1 , double phy1 , double chem1){
+		nm = nm1;
+		roll = roll1;
+		mathnum = math1;
+		phynum = phy1;
+		chemnum = chem1;
+	}
 	
 }
 
