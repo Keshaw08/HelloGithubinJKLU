@@ -577,3 +577,14 @@ public class students {
 	}
 
 }
+
+
+public static String dream11(String n) {
+		if(n == "csk") {
+			return "MS dhoni";
+		}
+		else if (n == "mi") {
+			return "rohit";
+		}
+		return "draw";
+	}
