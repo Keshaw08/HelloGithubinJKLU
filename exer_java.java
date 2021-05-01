@@ -563,14 +563,23 @@ class subject{
 
 public class students {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner np = new Scanner(System.in);
-		System.out.println("What is name & Batch of Student : ");
+	Scanner np = new Scanner(System.in);
+		System.out.println("What is Name of Student : ");
 		String a = np.next();
-		String b = np.next();
+		System.out.println("Roll no. of Student : ");
+		int b = np.nextInt();
+		System.out.println("Batch of Student : ");
+		String bt = np.next();
+		System.out.println("Marks of Mathematics : ");
+		double mt = np.nextDouble();
+		System.out.println("Marks of Physics : ");
+		double ph = np.nextDouble();
+		System.out.println("Marks of Chemistry : ");
+		double ch = np.nextDouble();
+		
 		subject Asubject;
 		Asubject = new subject(a,b);
+		Asubject= new subject(a,b,mt,ph,ch);
 		
 		System.out.println("==========Score Card==========");
 		System.out.println();
@@ -578,11 +587,9 @@ public class students {
 		System.out.println("Physics : "+ Asubject.phynum);
 		System.out.println("Chemistry : "+ Asubject.chemnum);
 		System.out.println();
-		System.out.println("Percantage : "+ Asubject.add());
+		System.out.println("Percantage : "+ Asubject.add()*100 + "%");
 		System.out.println();
 		System.out.println("==============================");
-	}
-
 }
 
 
