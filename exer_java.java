@@ -558,6 +558,26 @@ class subject{
 		phynum = phy1;
 		chemnum = chem1;
 	}
+	subject(String nm1 , int roll1, double math2 , double phy2){
+		nm = nm1;
+		roll = roll1;
+		mathnum = math2;
+		phynum = phy2;
+		chemnum = 33;
+	}
+	subject(String nm1, int roll1, double math3){
+		nm = nm1;
+		roll = roll1;
+		mathnum = math3;
+	}
+	subject(String nm1, int roll1, String bt, double math4, double phy4, double chem4){
+		nm = nm1;
+		roll = roll1;
+		batch = bt;
+		mathnum = math4;
+		phynum = phy4;
+		chemnum = chem4;
+	}
 	
 }
 
