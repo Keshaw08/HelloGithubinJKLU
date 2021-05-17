@@ -622,3 +622,49 @@ public static String dream11(String n) {
 		}
 		return "draw";
 	}
+
+
+
+import java.util.*;
+public class Election {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("WELCOME TO ELECTION POLING BOOTH");
+		Scanner np = new Scanner(System.in);
+		System.out.println("What is your age : ");
+		int a = np.nextInt();
+		String arr1[] = {"Narendra Modi","Rahul Gandhi","Arvind Kejriwal"};
+		String arr2[] = {"John", "Goku","Thor",""};
+		
+		if(a < 18) {
+			System.out.println("Sorry my Friend, you are not Eligible.");
+		}else {
+			System.out.println("Okay you are eligible, do you have voter ID card? (Y/N) ");
+			String b = np.next();
+			
+			if(b.equals("Y")) {
+				System.out.println("Okay your voter ID card is in good condition.");
+				System.out.println("Below is the list of Candidate, whom do you want to Select.");
+				System.out.println();
+				for(int i=0; i<arr1.length;i++) {
+					System.out.println(arr1[i]);
+				}
+				System.out.println();
+				String c = np.next();
+				System.out.println();
+				System.out.println("Good you have made a good decision may your candidate win.");
+			}
+			else {
+				System.out.println("NO Problem, let's add your name to voter ID list");
+				String d = np.next();
+				System.out.println();
+				for(int j=0; j<arr2.length;j++) {
+					arr2[arr2.length-1] = d;
+					System.out.println(arr2[j]);
+				}
+			}
+		}
+	}
+
+}
