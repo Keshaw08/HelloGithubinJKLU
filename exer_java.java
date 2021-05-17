@@ -668,3 +668,21 @@ public class Election {
 	}
 
 }
+
+
+import java.util.Scanner;
+
+public class Practice_vacation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte value = 127;
+		value++;
+		System.out.println(value);
+		
+		byte value2 = 127;
+		value2--;
+		System.out.println(value2);
+	}
+
+}
