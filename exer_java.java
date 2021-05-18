@@ -708,3 +708,16 @@ public class MyArea {
 	}
 	
 }
+
+
+int a,b,sum=0;
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give me a Number : ");
+		a = np.nextInt();
+		
+		while(a>0) {
+			b = a%10;
+			sum = sum + b;
+			a = a/10;
+		}
+		System.out.println("The sum of digits is : "+sum);
