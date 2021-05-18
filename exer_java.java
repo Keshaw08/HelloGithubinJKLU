@@ -686,3 +686,25 @@ public class Practice_vacation {
 	}
 
 }
+
+
+public class MyArea {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(guess("Hello"));
+		System.out.println("Binary value is : "+fun(5));
+		System.out.println("binary : "+fun(348709174));
+	}
+	public static int guess(String n) {
+		if (n.equals("Hello")) {
+			System.out.println("Yes code is correct");
+		}
+		return n.length();
+	}
+	
+	public static String fun(int a) {
+		return Integer.toBinaryString(a);
+	}
+	
+}
