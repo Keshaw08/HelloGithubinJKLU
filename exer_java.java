@@ -721,3 +721,11 @@ int a,b,sum=0;
 			a = a/10;
 		}
 		System.out.println("The sum of digits is : "+sum);
+
+
+
+		System.out.println("Tell me a number to find table : ");
+		int d = np.nextInt();
+		for(int i=1;i<11;i++) {
+			System.out.println(d + " X "+i+" = "+d*i);
+		}
