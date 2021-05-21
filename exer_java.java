@@ -729,3 +729,44 @@ int a,b,sum=0;
 		for(int i=1;i<11;i++) {
 			System.out.println(d + " X "+i+" = "+d*i);
 		}
+
+
+
+class models{
+	int Eng,gear,seat;
+	
+	int price() {
+		int arr1[] = {Eng, gear,seat};
+		for(int i = 0; i<3;i++) {
+			System.out.println(arr1[i]);
+		}
+		return Eng*5 + gear*10 + seat*2;
+	}
+
+	models(int e1, int g1, int s1){
+		Eng = e1;
+		gear = g1;
+		seat = s1;
+	}
+	models(int e2){
+		Eng = e2;
+		gear = 5;
+		seat = 4;
+	}
+}
+
+
+public class MyCar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		models Honda;
+		models Skoda;
+		Honda = new models(1300,6,7);
+		Skoda = new models(1275);
+		System.out.println("Price of Honda (100$) : "+Honda.price());
+		System.out.println();
+		System.out.println("Price of Skoda (100$) : "+Skoda.price());
+	}
+
+}
