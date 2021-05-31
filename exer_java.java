@@ -770,3 +770,17 @@ public class MyCar {
 	}
 
 }
+
+
+for(int i=0;i<6;i++) {
+			for(int j=0;j<6;j++) {
+				System.out.print("*");
+				if(i==2 && j == 1) {
+					System.out.print("#");
+				}
+				if(i==4 && j == 3) {
+					System.out.print("@");
+				}
+			}
+			System.out.println();
+		}
