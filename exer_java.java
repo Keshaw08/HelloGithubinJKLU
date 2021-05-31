@@ -835,3 +835,18 @@ public class Same_method {
 		System.out.println();
 		System.out.println("The double with odd number is : "+ ak.pick_odd_out(2.7, 0.6));
 		System.out.println();
+
+
+String max(String ck, String dk, String ek) {
+		if(ck.compareTo(dk)>0 && ck.compareTo(ek)>0) {
+			return ck;
+		}
+		else if(dk.compareTo(ck)>0 && dk.compareTo(ek)>0) {
+			return dk;
+		}
+		else {
+			return ek;
+		}
+	}
+max_fun c = new max_fun();
+System.out.println(c.max("computer", "super computer"));
