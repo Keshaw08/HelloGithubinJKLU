@@ -784,3 +784,54 @@ for(int i=0;i<6;i++) {
 			}
 			System.out.println();
 		}
+
+class same_fun{
+	int pick_odd_out(int a, int b) {
+		if(a%2==0) {
+			return b;
+		}
+		else {
+			return a;
+		}
+	}
+	
+	String pick_odd_out(String c, String d) {
+		if(c.length()%2==0) {
+			return d;
+		}
+		else {
+			return c;
+		}
+	}
+	
+	char pick_odd_out(char e, char f) {
+		if(e%2==0) {
+			return f;
+		}
+		else {
+			return e;
+		}
+	}
+	
+	double pick_odd_out(double g, double h) {
+		if(g%2==0) {
+			return h;
+		}
+		else {
+			return g;
+		}
+	}
+}
+public class Same_method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		same_fun ak = new same_fun();
+		System.out.println("The odd number is : "+ak.pick_odd_out(5,4));
+		System.out.println();
+		System.out.println("The word with odd number length : "+ak.pick_odd_out("khalifa", "burj khalifa"));
+		System.out.println();
+		System.out.println("The char with odd ascii number is : "+ak.pick_odd_out('#','~'));
+		System.out.println();
+		System.out.println("The double with odd number is : "+ ak.pick_odd_out(2.7, 0.6));
+		System.out.println();
