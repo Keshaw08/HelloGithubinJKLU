@@ -933,3 +933,14 @@ public class method_over {
 	
 
 }
+
+for(int k=0;k<9;k++) {
+			for(int l=0;l<9;l++) {
+				System.out.print("$");
+				if(k%2==0 && l%3==0) {
+					System.out.print("@");
+					System.out.print("~");
+				}
+			}
+			System.out.println();
+		}
