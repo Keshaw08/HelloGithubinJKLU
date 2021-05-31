@@ -850,3 +850,86 @@ String max(String ck, String dk, String ek) {
 	}
 max_fun c = new max_fun();
 System.out.println(c.max("computer", "super computer"));
+
+
+class max_fun{
+	int max(int a, int b, int y) {
+		if(a > b && a > y) {
+			return a;
+		}
+		else if(b > a && b > y) {
+			return b;
+		}
+		else {
+			return y;
+		}
+		
+	}
+	
+	int max(int ar, int br) {
+		if(ar > br) {
+			return ar;
+		}
+		else {
+			return br;
+		}
+	}
+	
+	double max(double d, double e) {
+		if(d>e) {
+			return d;
+		}
+		else {
+			return e;
+		}
+	}
+	
+	String max(String ak, String bk) {
+		if(ak.compareTo(bk)>0) {
+			return ak;
+		}
+		else {
+			return bk;
+		}
+	}
+	
+	char max(char at, char bt) {
+		if(at > bt) {
+			return at;
+		}
+		else {
+			return bt;
+		}
+	}
+	
+
+}
+
+
+public class method_over {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		max_fun c = new max_fun();
+		
+		
+		System.out.println(c.max(4,7,16));
+		
+		System.out.println(c.max(3.4f,4.5f));
+		
+		System.out.println(c.max("Hello","Fellow"));
+		
+		System.out.println();
+		
+		System.out.println(c.max('#','@'));
+		
+		System.out.println(c.max(5,3));
+		
+		System.out.println(c.max("KFC", "McDonalds", "Burger King"));
+		
+		System.out.println(0011);
+	}
+
+	
+
+}
