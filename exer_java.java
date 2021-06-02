@@ -944,3 +944,16 @@ for(int k=0;k<9;k++) {
 			}
 			System.out.println();
 		}
+
+
+for(int t=0;t<8;t++) {
+			for(int y=0;y<5;y++) {
+				int j=0;
+				do {
+					System.out.print("~");
+					System.out.print("!");
+					j++;
+				}while(j<1);
+			}
+			System.out.println();
+		}
