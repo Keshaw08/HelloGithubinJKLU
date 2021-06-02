@@ -957,3 +957,22 @@ for(int t=0;t<8;t++) {
 			}
 			System.out.println();
 		}
+
+
+import java.util.*;
+class sam_fun{
+	boolean same(int a, int b) {
+		boolean c = (a + b)%2==0;
+		return c;
+	}
+	
+	int same(String d, String e) {
+		int f = (d.length() + e.length());
+		return f;
+	}
+	
+	boolean same(char f, char t, char w) {
+		boolean u = (f + t)%w==0;
+		return u;
+	}
+}
