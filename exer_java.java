@@ -976,3 +976,18 @@ class sam_fun{
 		return u;
 	}
 }
+
+
+sam_fun ak = new sam_fun();
+		
+		System.out.println(ak.same("HelloHarryPotter", "IAmIronMan"));
+		System.out.println();
+		System.out.println(ak.same(66, 99));
+		System.out.println();
+		
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give me Two Numbers for the Field which will be checked for division by 2 : ");
+		int bk = np.nextInt();
+		int ck = np.nextInt();
+		
+		System.out.println();
