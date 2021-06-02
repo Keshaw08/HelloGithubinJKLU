@@ -991,3 +991,20 @@ sam_fun ak = new sam_fun();
 		int ck = np.nextInt();
 		
 		System.out.println();
+
+
+for(int h=0;h<bk;h++) {
+			for(int g=0;g<ck;g++) {
+				if(ak.same(bk, ck)==true) {
+					System.out.print("^");
+					if(h==2 && g==3) {
+						System.out.print("#");
+					}
+				}
+				else {
+					System.out.print("!");
+					
+				}
+			}
+			System.out.println();
+		}
