@@ -1033,3 +1033,27 @@ for(int h=0;h<bk;h++) {
 	}
 	
 }
+
+
+import java.util.*;
+public class Problems {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give me all the Name of the Problem you have thaught : ");
+		
+		String arr1 [] = new String[10];
+		
+		for(int i=0;i<10;i++) {
+			arr1[i] = np.next();
+		}
+		
+		System.out.println();
+		
+		for(int j=0;j<10;j++) {
+			System.out.println(arr1[j]);
+		}
+	}
+
+}
