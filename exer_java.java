@@ -1116,3 +1116,16 @@ public class Biscuit_Weight {
 	}
 
 }
+
+for(int q=0;q<8;q++) {
+			for(int w=0;w<9;w++) {
+				if((q+w)%2==0) {
+					System.out.print("[;]");
+				}
+				else {
+					System.out.print("/-/");
+				}
+				
+			}
+			System.out.println();
+		}
