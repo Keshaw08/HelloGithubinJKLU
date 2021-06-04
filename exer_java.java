@@ -1085,3 +1085,34 @@ public class Chips_Weight {
 	}
 
 }
+
+class Biscuit{
+	String Brand;
+	int Pieces;
+	static int Total_Weight = 0;
+	double Weight;
+	int Price;
+	
+	Biscuit(String Brand, int Pieces, int Price,int Weight){
+		this.Brand = Brand;
+		this.Pieces = Pieces;
+		this.Price = Price;
+		this.Weight = Weight;
+		Total_Weight = Total_Weight + Weight;
+	}
+}
+
+
+public class Biscuit_Weight {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Biscuit B1 = new Biscuit("Jim-Jam",6,30,50);
+		Biscuit B2 = new Biscuit("Oreo",8,30,60);
+		Biscuit B3 = new Biscuit("Dark Fantasy",5,30,50);
+		Biscuit B4 = new Biscuit("Parle G",10,5,80);
+		
+		System.out.println(B1.Total_Weight);
+	}
+
+}
