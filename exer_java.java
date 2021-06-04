@@ -1129,3 +1129,29 @@ for(int q=0;q<8;q++) {
 			}
 			System.out.println();
 		}
+
+
+for(int j=0;j<10;j++) {
+			System.out.println(arr1[j]);
+		}
+		
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<9;j++) {
+				switch (i+j) {
+				case (2) : System.out.print("!");
+				break;
+				
+				case(4) : System.out.print("`");
+				break;
+				
+				case(6) : System.out.print("?");
+				break;
+				
+				case(8) : System.out.print("[]");
+				break;
+				
+				default : System.out.print("_");
+				}
+			}
+			System.out.println();
+		}
