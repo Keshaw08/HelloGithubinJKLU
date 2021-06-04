@@ -1057,3 +1057,31 @@ public class Problems {
 	}
 
 }
+
+class Chips{
+	String Brand;
+	int Price;
+	static int Total_Price;
+	String Type;
+	
+	Chips(String Brand, int Price, String Type){
+		this.Brand = Brand;
+		this.Price = Price;
+		this.Type = Type;
+		Total_Price = Total_Price + Price;
+	}
+	
+}
+public class Chips_Weight {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Chips c1 = new Chips("Lays",20,"Cream&Onion");
+		Chips c2 = new Chips("Diamond",10,"Tomato");
+		Chips c3 = new Chips("Dorito's",35,"Nachos");
+		Chips c4 = new Chips("Sizzling_Barbeque",40,"Chilli_Potato");
+		
+		System.out.println(c1.Total_Price);
+	}
+
+}
