@@ -1177,6 +1177,31 @@ public class Pattern_2 {
 			}
 			System.out.println();
 		}
+
+		for(int i=0;i<20;i++) {
+			for(int j=0;j<20;j++) {
+				switch (i+j) {
+				case (3) : System.out.print("~");
+				break;
+				
+				case (6) : System.out.print("_");
+				break;
+				
+				case (9) : System.out.print("\\");
+				break;
+				
+				case (12) : System.out.print(">");
+				break;
+				
+				case (15) : System.out.print("||");
+				break;
+				
+				case (18) : System.out.print(":");
+				break;
+				
+				default : System.out.print("-");
+				}
+			}
 	}
 
 }
