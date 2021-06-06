@@ -1217,3 +1217,32 @@ public class Pattern_2 {
 	}
 
 }
+
+
+for(int i=10;i>0;i--) {
+			for(int j=0;j<10;j++) {
+				if(i+j==2 || i+j==4 || i+j==6 || i+j==8 || i+j==10) {
+					System.out.print("^");
+				}
+				else {
+					System.out.print("-");
+				}
+			}
+			System.out.println();
+		}
+		
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				System.out.print("Q");
+				System.out.print("W");
+				
+				if((i+j)%4==0) {
+					System.out.print("[]");
+				}
+				
+				if((i+j)%8==0) {
+					System.out.print("--");
+				}
+			}
+			System.out.println();
+		}
