@@ -1257,3 +1257,13 @@ String arr1 [] = {"Hello", "Github", "in","JKLU"};
 			}
 			System.out.println();
 		}
+
+System.out.println();
+		
+		int a1 = 2;
+		int b1 = 3;
+		int c=0;
+		for(int i=1;i<=a1;i++) {
+			c = c + b1;
+			System.out.println(c);
+		}
