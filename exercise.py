@@ -1205,3 +1205,9 @@ f = int()
 if(b-a == c-b and d-c == e-d):
     f =  e+ (b-a)
 print("The next number is : ",f)
+
+for i in range(0,8): 
+    for j in range(0,8) : 
+        if((i+j)==10):
+            print("#")
+        
