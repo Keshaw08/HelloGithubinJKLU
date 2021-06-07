@@ -1267,3 +1267,26 @@ System.out.println();
 			c = c + b1;
 			System.out.println(c);
 		}
+
+System.out.println();
+		
+		char field[][] = new char[8][8];
+		
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				if(i%2==0 && j%2==0 && i%3==0 && j%3==0) {
+					field[i][j] = '*';
+					System.out.print(field[i][j]+" ");
+				}
+				else if(i%2==1 && j%2==1) {
+					field[i][j] = '#';
+					System.out.print(field[i][j] + " ");
+				}
+				else {
+					field[i][j] = '^';
+					System.out.print(field[i][j] + " ");
+				}
+				
+			}
+			System.out.println();
+		}
