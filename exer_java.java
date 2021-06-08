@@ -1352,3 +1352,13 @@ System.out.println((j<5.0)?"float is less than 5":"float is greater than 5");
 		System.out.println((j%2==0)?"float is divisible by 2":"float is not divisible by 2");
 		System.out.println();
 		
+
+System.out.println("The Loops : ");
+		
+		System.out.println("The While Loop");
+		int ak=0;
+		while (ak<4) {
+			j = j+1;
+			System.out.println(j);
+			ak++;
+		}
