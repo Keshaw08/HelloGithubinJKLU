@@ -1328,3 +1328,21 @@ System.out.println();
 			System.out.println("Alas, Both the variable are out of Range.");
 		}
 		
+
+System.out.println();
+		System.out.println("Give me a float value");
+		int j = (int) np.nextDouble();
+		
+		switch (j%3) {
+		case (0) : System.out.println("The float value divided by 3 gives 0, Hence it is a Factor of 3.");
+		break;
+		
+		case (1) : System.out.println("The float value divided by 3 gives 1.");
+		break;
+		
+		case (2) : System.out.println("The float value divided by 3 gives 2.");
+		break;
+		
+		default : System.out.println("The float value is not Divisible by 3.");
+		}
+		System.out.println();
