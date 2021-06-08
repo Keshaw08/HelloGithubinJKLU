@@ -1362,3 +1362,21 @@ System.out.println("The Loops : ");
 			System.out.println(j);
 			ak++;
 		}
+
+System.out.println();
+		System.out.println("The Do-While Loop");
+		
+		int bk=0;
+		do {
+			j = j-1;
+			System.out.println(j);
+			bk++;
+		}while(bk<6);
+		
+		System.out.println();
+		System.out.println("The For Loop");
+		
+		for(int k=0;k<8;k++) {
+			j = j + k;
+			System.out.println(j);
+		}
