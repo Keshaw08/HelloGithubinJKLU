@@ -1290,3 +1290,21 @@ System.out.println();
 			}
 			System.out.println();
 		}
+
+System.out.println("Let's Start From the Starting.");
+		
+		int a = 23;
+		String b = "Hello";
+		char c = '#';
+		double d = 34.4;
+		float e = 4.5f;
+		boolean f = true;
+		long g = new Long(100000);
+		
+		System.out.println();
+		System.out.println("int : "+a +"\n"+ "String : "+b+ "\n" +"char : "+c+"\n"+"double : "+d + "\n"+ "Float : "+e+"\n"+"boolean : "+f+"\n"+"Long : "+g);
+		System.out.println();
+		
+		System.out.println("Multiply : "+a*d);
+		System.out.println("Divide : "+ g/e);
+		
