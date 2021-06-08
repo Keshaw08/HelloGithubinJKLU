@@ -1346,3 +1346,9 @@ System.out.println();
 		default : System.out.println("The float value is not Divisible by 3.");
 		}
 		System.out.println();
+
+System.out.println((j<5.0)?"float is less than 5":"float is greater than 5");
+		System.out.println();
+		System.out.println((j%2==0)?"float is divisible by 2":"float is not divisible by 2");
+		System.out.println();
+		
