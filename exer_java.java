@@ -1308,3 +1308,23 @@ System.out.println("Let's Start From the Starting.");
 		System.out.println("Multiply : "+a*d);
 		System.out.println("Divide : "+ g/e);
 		
+
+System.out.println();
+		System.out.println("The Conditional Statements :");
+		System.out.println();
+		
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give me an Int and a String ");
+		int h = np.nextInt();
+		String i = np.next();
+		
+		if(h< 45 && h>20) {
+			System.out.println("Yes a int is in range Specified.");
+		}
+		else if(i.equals("Hello") || i.charAt(0)=='N') {
+			System.out.println("Yes b String is in range Specified.");
+		}
+		else {
+			System.out.println("Alas, Both the variable are out of Range.");
+		}
+		
