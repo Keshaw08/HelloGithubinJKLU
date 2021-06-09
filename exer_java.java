@@ -1380,3 +1380,13 @@ System.out.println();
 			j = j + k;
 			System.out.println(j);
 		}
+
+System.out.println("The Arrays");
+		
+		int arr1 [] = new int [5];
+		for(int ck=0; ck<arr1.length;ck++) {
+			arr1[ck] = (int) Math.pow(ck, j);
+			System.out.println(arr1[ck]);
+		}
+		
+		System.out.println();
