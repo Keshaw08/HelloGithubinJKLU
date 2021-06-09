@@ -1390,3 +1390,19 @@ System.out.println("The Arrays");
 		}
 		
 		System.out.println();
+
+char arr2 [][] = new char [6][8];
+		
+		for(int dk = 0;dk<6;dk++) {
+			for(int ek = 0;ek<8;ek++) {
+				if((dk + ek)%2==0) {
+					arr2[dk][ek] = '&';
+				}
+				else if ((dk + ek)%2==1){
+					arr2[dk][ek] = '@';
+				}
+				else {
+					arr2[dk][ek] = '#';
+				}
+			}
+		}
