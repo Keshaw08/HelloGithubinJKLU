@@ -1438,3 +1438,9 @@ String arr4[][] = {{"Jeff Bezos", "Elon Musk"},{"Bernard", "Bill Gates"},{"Amban
 			}
 			System.out.println();
 		}
+
+
+System.out.println("The Strings ");
+		
+		String fk = new String("Let's kill him properly this time.");
+		System.out.println(fk.length() +" "+ fk.charAt(6));
