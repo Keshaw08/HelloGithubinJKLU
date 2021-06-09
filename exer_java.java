@@ -1406,3 +1406,18 @@ char arr2 [][] = new char [6][8];
 				}
 			}
 		}
+
+for(int i1=0;i1<6;i1++) {
+			for(int j1=0;j1<8;j1++) {
+				System.out.print(arr2[i1][j1] + " ");
+			}
+			System.out.println();
+		}
+		
+		String arr3[] = {"John Wick","Jason Borne","Zeus","Bane"};
+		System.out.println();
+		
+		for(int i2 = 0;i2<arr3.length;i2++) {
+			arr3[i2] += " ^/ Tick";
+			System.out.println(arr3[i2]);
+		}
