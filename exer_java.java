@@ -1421,3 +1421,20 @@ for(int i1=0;i1<6;i1++) {
 			arr3[i2] += " ^/ Tick";
 			System.out.println(arr3[i2]);
 		}
+
+String arr4[][] = {{"Jeff Bezos", "Elon Musk"},{"Bernard", "Bill Gates"},{"Ambani","Adani"}};
+		System.out.println();
+		
+		for(int i3=0;i3<arr4.length;i3++) {
+			for(int i4 = 0;i4<2;i4++) {
+				arr4[i3][i4] += " ^/ Business Owner";
+
+			}
+		}
+		
+		for(int i5=0;i5<arr4.length;i5++) {
+			for(int i6=0;i6<2;i6++) {
+				System.out.print(arr4[i5][i6]+ " ");
+			}
+			System.out.println();
+		}
