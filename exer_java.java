@@ -1444,3 +1444,12 @@ System.out.println("The Strings ");
 		
 		String fk = new String("Let's kill him properly this time.");
 		System.out.println(fk.length() +" "+ fk.charAt(6));
+
+String gk = "You can take my toys but one thing you can't take away from me that is I am Iron Man.";
+		
+		System.out.println(gk.subSequence(13, 20));
+		System.out.println(gk.toUpperCase() + "\n" + gk.toLowerCase());
+		
+		if(gk.substring(3,4).equals('H')) {
+			System.out.println(gk.compareTo(fk)<0);
+		}
