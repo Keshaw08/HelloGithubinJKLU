@@ -1453,3 +1453,14 @@ String gk = "You can take my toys but one thing you can't take away from me that
 		if(gk.substring(3,4).equals('H')) {
 			System.out.println(gk.compareTo(fk)<0);
 		}
+
+public static int Vovel_word(String gk) {
+		int count=0;
+		for(int i=0;i<gk.length();i++) {
+			if(gk.charAt(i)=='a' || gk.charAt(i)=='e' || gk.charAt(i)=='i' || gk.charAt(i)=='o' || gk.charAt(i)=='u') {
+				count++;
+			}
+		}
+		return count;
+	}
+System.out.println("The no. of Vowels in gk String are : "+Vovel_word(gk));
