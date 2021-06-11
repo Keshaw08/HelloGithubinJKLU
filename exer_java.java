@@ -1471,3 +1471,8 @@ System.out.println(Math.sin(30) + Math.cos(60));
 		
 		System.out.println("2.6 : " + Math.ceil(2.6) + " " + "3.3 : "+Math.floor(3.3));
 		System.out.println("round with rint 2.6 : " + Math.rint(2.6) + " " + "round with round 3.3 : "+Math.round(3.3));
+
+
+System.out.println();
+		int jk = (int) (Math.random()*1000);
+		System.out.println(jk);
