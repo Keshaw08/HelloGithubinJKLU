@@ -1482,3 +1482,21 @@ int wk = (int)((int)'a' + Math.random()*((int)'z' - (int)'a' + 1));
 		
 		char sk = (char)('a' + Math.random()*('z' - 'a' + 1));
 		System.out.println(sk);
+
+class laptop{
+	int ram,rom;
+	String brand,processor;
+	
+	String Coding(int ram,int rom,String brand,String processor) {
+		if(ram > 8) {
+			System.out.println("Yes, With this configuration of ram you can code easily.");
+		}
+		else if(ram < 8 || processor.equals("i5")) {
+			System.out.println("Yes, With this configuration of processor you can code easily.");
+		}
+		else {
+			System.out.println("For best coding experiance you must upgrade.");
+		}
+	return "remember, Start with what you have.";
+	}
+}
