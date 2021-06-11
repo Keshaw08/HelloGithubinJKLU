@@ -1476,3 +1476,9 @@ System.out.println(Math.sin(30) + Math.cos(60));
 System.out.println();
 		int jk = (int) (Math.random()*1000);
 		System.out.println(jk);
+
+int wk = (int)((int)'a' + Math.random()*((int)'z' - (int)'a' + 1));
+		System.out.println(wk);
+		
+		char sk = (char)('a' + Math.random()*('z' - 'a' + 1));
+		System.out.println(sk);
