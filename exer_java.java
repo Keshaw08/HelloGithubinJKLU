@@ -1500,3 +1500,16 @@ class laptop{
 	return "remember, Start with what you have.";
 	}
 }
+
+
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<9;j++) {
+				if((i+j)%2==(i-j)%2) {
+					System.out.print("^");
+				}
+				else {
+					System.out.print("||");
+				}
+			}
+			System.out.println();
+		}
