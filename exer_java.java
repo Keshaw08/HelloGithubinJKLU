@@ -1558,3 +1558,22 @@ public class Start_Java_2 {
 	}
 
 }
+
+public String Coding() {
+		for(int i=0; i<ram;i++) {
+			for(int j=0;j<rom/32;j++) {
+				if(ram > 6 || archi == "32Bit") {
+					//System.out.println("Yeah, you can code with this configuration of ram.");
+					System.out.print("^");
+				}
+				else if(archi == "64Bit" || processor == "i5"){
+					//System.out.println("Yeah, you can code with this configuration of processor.");
+					System.out.print("%");
+				}
+				else {
+					//System.out.println("You must upgrade your PC for Coding.");
+					System.out.print("-");
+				}
+			}
+			System.out.println();
+		}
