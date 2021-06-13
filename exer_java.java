@@ -1513,3 +1513,23 @@ class laptop{
 			}
 			System.out.println();
 		}
+
+import java.util.*;
+class Laptop {
+	public int ram,rom;
+	public String processor, archi;
+	
+	public String Coding() {
+		if(ram > 6 || archi == "32Bit") {
+			System.out.println("Yeah, you can code with this configuration of ram.");
+		}
+		else if(archi == "64Bit" || processor == "i5"){
+			System.out.println("Yeah, you can code with this configuration of processor.");
+		}
+		else {
+			System.out.println("You must upgrade your PC for Coding.");
+		}
+	
+	return "Remember to Start with what you have.";
+	}
+}
