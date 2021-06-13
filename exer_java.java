@@ -1533,3 +1533,28 @@ class Laptop {
 	return "Remember to Start with what you have.";
 	}
 }
+
+public class Start_Java_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give the Configration for the PC.");
+		
+		Laptop Apple;
+		Apple = new Laptop();
+		System.out.println("Give the Ram");
+		Apple.ram = np.nextInt();
+		System.out.println("Give the Rom");
+		Apple.rom = np.nextInt();
+		System.out.println("Give the Processor");
+		Apple.processor = np.next();
+		System.out.println("Give the Architectur");
+		Apple.archi = np.next();
+		
+		System.out.println(Apple.Coding());
+		
+	}
+
+}
