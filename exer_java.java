@@ -1592,3 +1592,20 @@ class Maths_Class_12 extends Maths_Class_10{
 	boolean Vector;
 	boolean Calculus;
 }
+
+
+public class Inheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Maths_Class_12 c1 = new Maths_Class_12();
+		c1.avarage = true;
+		c1.Calculus = false;
+		c1.Trignometry = true;
+		
+		System.out.println("Avarage in 12th : "+c1.avarage + "\n" + "Calculus in 12th : "+c1.Calculus + "\n"+"Trignometry in 12th : "+c1.Trignometry);
+		
+	}
+
+}
