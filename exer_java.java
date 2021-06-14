@@ -1577,3 +1577,18 @@ public String Coding() {
 			}
 			System.out.println();
 		}
+
+class Maths_Class_6{
+	boolean decimal;
+	boolean avarage;
+}
+
+class Maths_Class_10 extends Maths_Class_6{
+	boolean Trignometry;
+	boolean Surface_area;
+}
+
+class Maths_Class_12 extends Maths_Class_10{
+	boolean Vector;
+	boolean Calculus;
+}
