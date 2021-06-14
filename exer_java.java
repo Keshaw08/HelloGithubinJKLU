@@ -1609,3 +1609,24 @@ public class Inheritance {
 	}
 
 }
+
+class JKLUStudents{
+	String name;
+	String Address;
+	String mobile;
+}
+
+class IETStudents extends JKLUStudents{
+	String branch;
+	double jeescore;
+}
+
+class CSEStudents extends IETStudents{
+	boolean pc_at_home;
+	boolean cs_in_12th;
+}
+
+class JKLU_BCA extends CSEStudents{
+	boolean MCA_karnahai;
+	
+}
