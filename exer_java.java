@@ -1630,3 +1630,35 @@ class JKLU_BCA extends CSEStudents{
 	boolean MCA_karnahai;
 	
 }
+
+public class Students {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		CSEStudents s1 = new CSEStudents();
+		s1.name = "Bansal";
+		s1.Address = "Civil Lines";
+		s1.cs_in_12th = true;
+		s1.pc_at_home = false;
+		s1.jeescore = 94.3;
+		System.out.println("Name : "+s1.name + "\n" + "Address : "+s1.Address + "\n"+"CS in 12th : "+s1.cs_in_12th + "\n" + "PC at home : " +s1.pc_at_home + "\n" +"JeeScore : "+s1.jeescore);
+		
+		System.out.println();
+		
+		IETStudents s2 = new IETStudents();
+		s2.name = "Wadhwa";
+		s2.branch = "ME";
+		s2.Address = "Mansarovar";
+		s2.jeescore = 84.8;
+		System.out.println("Name : "+s2.name + "\n"+"Address : "+s2.Address + "\n"+"JeeScore : "+ s2.jeescore + "\n" +"Branch : "+ s2.branch);
+		
+		System.out.println();
+		JKLU_BCA s3 = new JKLU_BCA();
+		s3.name = "Damani";
+		s3.jeescore = 77.8;
+		s3.MCA_karnahai = true;
+		System.out.println("Name : "+s3.name + "\n"+"JeeScore : "+s3.jeescore + "\n" + "Do you want to do MCA : "+s3.MCA_karnahai);
+	}
+
+}
