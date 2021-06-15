@@ -1662,3 +1662,24 @@ public class Students {
 	}
 
 }
+
+
+for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				if(j==2) {
+					System.out.print("^");
+				}
+				if(j==4) {
+					System.out.print("-");
+				}
+				if(j==6) {
+					System.out.print("`");
+				}
+				if(j==8) {
+					System.out.print("~");
+				}
+				System.out.print(",");
+			}
+			System.out.println();
+		}
+		
