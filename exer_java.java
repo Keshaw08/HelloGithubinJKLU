@@ -1809,3 +1809,41 @@ public class Super_class {
 	}
 
 }
+
+
+class one_1{
+	private String s;
+	private char c;
+	
+	one_1(String s, char c){
+		this.s = s;
+		this.c = c;
+	}
+	
+	String value(String s1, char c1) {
+		return s1 + " -- "+c1;
+	}
+}
+
+class two_2 extends one_1{
+	String s2;
+	
+	two_2(String s2, String s,char c){
+		super(s, c);
+		this.s2 = s2;
+		
+	}
+	
+	String ret(String s2, String s, char c) {
+		return s2 + " "+ s + " " + c;
+	}
+}
+public class Inheritance_super {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		two_2 tw = new two_2("Himalyan cool","LG",'$');
+		System.out.println(tw.ret("Himalayan cool","LG" , '$'));
+	}
+
+}
