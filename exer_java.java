@@ -1740,3 +1740,35 @@ class Laptop {
 		archi = d1;
 	}
 }
+
+public class Start_Java_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner np = new Scanner(System.in);
+		System.out.println("Give the Configration for the Apple Mac.");
+		
+		Laptop Apple;
+		
+		System.out.println("Give the Ram");
+		int a1 = np.nextInt();
+		System.out.println("Give the Rom");
+		int b1 = np.nextInt();
+		System.out.println("Give the Processor");
+		String c1 = np.next();
+		System.out.println("Give the Architectur");
+		String d1 = np.next();
+		Apple = new Laptop(a1,b1,c1,d1);
+		
+		Laptop vaio = new Laptop(6,"i3");
+		
+		System.out.println(Apple.Coding());
+		
+		System.out.println();
+		
+		System.out.println("for vaio");
+		System.out.println(vaio.Coding());
+	}
+
+}
