@@ -1697,3 +1697,46 @@ for(int i=0; i<8;i++) {
 			}
 			System.out.println();
 		}
+
+
+import java.util.*;
+class Laptop {
+	public int ram,rom;
+	public String processor, archi;
+	
+	public String Coding() {
+		for(int i=0; i<ram;i++) {
+			for(int j=0;j<rom/32;j++) {
+				if(ram > 6 || archi == "32Bit") {
+					//System.out.println("Yeah, you can code with this configuration of ram.");
+					System.out.print("^");
+				}
+				else if(archi == "64Bit" || processor == "i5"){
+					//System.out.println("Yeah, you can code with this configuration of processor.");
+					System.out.print("%");
+				}
+				else {
+					//System.out.println("You must upgrade your PC for Coding.");
+					System.out.print("-");
+				}
+			}
+			System.out.println();
+		}
+	
+	return "Remember to Start with what you have.";
+	}
+	
+	Laptop(int ram, String processor){
+		this.ram = ram;
+		this.processor = processor;
+		rom = 1024;
+		archi = "32Bit";
+	}
+	
+	Laptop(int a1, int b1, String c1, String d1){
+		ram = a1;
+		rom = b1;
+		processor = c1;
+		archi = d1;
+	}
+}
