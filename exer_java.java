@@ -1772,3 +1772,40 @@ public class Start_Java_2 {
 	}
 
 }
+
+
+class ak{
+	private int a;
+	ak(int a){
+		this.a = a;
+	}
+	
+	int ret_a(int a) {
+		
+		return a;
+	}
+}
+
+class bk extends ak{
+	int b;
+	
+	bk(int a,int b){
+		super(a);
+		this.b = b;
+	}
+	
+	int ret_a_b(int a, int b) {
+		return a + b;
+		
+	}
+}
+public class Super_class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		bk b1 = new bk(5,7);
+		System.out.println(b1.ret_a_b(5,7));
+	}
+
+}
