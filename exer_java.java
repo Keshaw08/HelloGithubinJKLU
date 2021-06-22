@@ -1847,3 +1847,19 @@ public class Inheritance_super {
 	}
 
 }
+
+
+		for(int i=0; i<8; i++) {
+			for(int j=0; j<8;j++) {
+				if(i+j ==  i-j) {
+					System.out.print("~");
+				}
+				else if(i*j == i/j) {
+					System.out.print("-");
+				}
+				else {
+					System.out.print(".");
+				}
+			}
+			System.out.println();
+		}
