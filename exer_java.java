@@ -1878,3 +1878,16 @@ public class Inheritance_super {
 		return a1;
 		
 	}
+
+	static String sum(String c1) {
+		if(c1.equals("i3")) {
+			System.out.println("Price is 7000");
+		}
+		else if(c1.equals("i5")) {
+			System.out.println("Price is 12000");
+		}
+		else {
+			System.out.println("Unknown Processor");
+		}
+		return "Every Processor is best";
+	}
