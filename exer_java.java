@@ -1863,3 +1863,18 @@ public class Inheritance_super {
 			}
 			System.out.println();
 		}
+
+
+	static int sum(int a1) {
+		if(a1 == 4) {
+			System.out.println("Price is 2000");
+		}
+		else if(a1 == 8) {
+			System.out.println("Price is 4000");
+		}
+		else {
+			System.out.println("Unknown Ram");
+		}
+		return a1;
+		
+	}
