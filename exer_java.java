@@ -1952,3 +1952,32 @@ class Bus implements Vehicle{
 		System.out.println("Gear : "+ gear1+"\n"+"Speed : "+ speed1 + "\n"+"Music System : "+music);
 	}
 }
+
+public class Interface_Vehicle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Car c1 = new Car();
+		c1.ChangeGear(4);
+		c1.Speedup(70);
+		c1.ApplyBrakes(40);
+		c1.MusicSystem(true);
+		
+		System.out.println("Car Status : ");
+		c1.printStates();
+		
+		System.out.println();
+		
+		Car c2 = new Car();
+		c2.ChangeGear(6);
+		c2.Speedup(50);
+		c2.ApplyBrakes(10);
+		c1.MusicSystem(false);
+		
+		System.out.println("Bus Status : ");
+		c2.printStates();
+
+	}
+
+}
