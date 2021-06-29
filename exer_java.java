@@ -1891,3 +1891,37 @@ public class Inheritance_super {
 		}
 		return "Every Processor is best";
 	}
+
+interface Vehicle{
+	void ChangeGear(int ak);
+	void Speedup(int ak);
+	void ApplyBrakes(int ak);
+	void MusicSystem(boolean ek);
+}
+
+class Car implements Vehicle{
+	int Speed;
+	int Gear;
+	boolean musicSystem;
+	
+	public void ChangeGear(int bk) {
+		Gear = bk;
+	}
+	
+	public void Speedup(int ck) {
+		Speed = Speed + ck;
+	}
+	
+	public void ApplyBrakes(int dk) {
+		Speed = Speed - dk;
+	}
+	
+	public void MusicSystem(boolean fk) {
+		musicSystem = fk;
+	}
+	
+	
+	public void printStates() {
+		System.out.println("Gear : "+ Gear+"\n"+"Speed : "+ Speed + "\n"+"Music System : "+musicSystem);
+	}
+}
