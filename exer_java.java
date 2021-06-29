@@ -1981,3 +1981,36 @@ public class Interface_Vehicle {
 	}
 
 }
+
+interface Computer{
+	void processor(String a);
+	void ram1(int b);
+}
+
+class one implements Computer{
+	String c;
+	int ram;
+	public void processor(String d) {
+		c = d;
+	}
+	
+	public void ram1(int e) {
+		ram = e;
+	}
+	
+	public void printStates() {
+		System.out.println("Processor : "+c+"\n"+"Ram : "+ ram);
+	}
+}
+public class Interface_Computer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		one Apple = new one();
+		Apple.processor("i7");
+		Apple.ram1(128);
+		Apple.printStates();
+	}
+
+}
+
