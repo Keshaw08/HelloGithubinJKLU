@@ -1925,3 +1925,30 @@ class Car implements Vehicle{
 		System.out.println("Gear : "+ Gear+"\n"+"Speed : "+ Speed + "\n"+"Music System : "+musicSystem);
 	}
 }
+
+class Bus implements Vehicle{
+	int speed1;
+	int gear1;
+	boolean music;
+	
+	public void ChangeGear(int bk) {
+		gear1 = bk;
+	}
+	
+	public void Speedup(int ck) {
+		speed1 = speed1 + ck;
+	}
+	
+	public void ApplyBrakes(int dk) {
+		speed1 = speed1 - dk;
+	}
+	
+	public void MusicSystem(boolean fk) {
+		music = fk;
+	}
+	
+	
+	public void printStates() {
+		System.out.println("Gear : "+ gear1+"\n"+"Speed : "+ speed1 + "\n"+"Music System : "+music);
+	}
+}
