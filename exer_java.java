@@ -2014,3 +2014,13 @@ public class Interface_Computer {
 
 }
 
+
+class two implements Computer{
+	int ram2;
+	public void ram1(int t) {
+		ram2 = t;
+	}
+	public void printStates() {
+		System.out.println("Ram : "+ram2);
+	}
+}
