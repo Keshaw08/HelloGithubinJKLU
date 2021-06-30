@@ -2024,3 +2024,7 @@ class two implements Computer{
 		System.out.println("Ram : "+ram2);
 	}
 }
+
+		two Asus = new two();
+		Asus.ram1(512);
+		Asus.printStates();
