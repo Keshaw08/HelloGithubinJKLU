@@ -2028,3 +2028,30 @@ class two implements Computer{
 		two Asus = new two();
 		Asus.ram1(512);
 		Asus.printStates();
+
+import java.util.*;
+public class Exceptions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner np = new Scanner(System.in);
+		int a = np.nextInt();
+		int b = np.nextInt();
+		String d = np.next();
+		char e1 = d.charAt(a);
+		try {
+			int c = a/b;
+			int f = e1+'4';
+		}
+		catch(Exception e){
+			System.out.println("It has errors");
+			System.out.println(e);
+
+			
+		}
+		System.out.println("program continued");
+		
+	}
+
+}
+
