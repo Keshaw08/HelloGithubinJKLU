@@ -2055,3 +2055,28 @@ public class Exceptions {
 
 }
 
+
+import java.util.*;
+public class Try_Catch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner np = new Scanner(System.in);
+		String a = np.nextLine();
+		int b = (int) (Math.random()*10);
+		System.out.println(b);
+		
+		try {
+			char c = a.charAt(b);
+			System.out.println(c);
+			int d = Character.getNumericValue(c);
+			int e = d/b;
+			System.out.println(e);
+		}
+		catch(Exception e) {
+			System.out.println("Error");
+		}
+	}
+
+}
+
