@@ -154,3 +154,17 @@ public class PracticeSet_3 {
 
 }
 
+public static int income(int ak) {
+		if(ak < 520000) {
+			System.out.println("You have to pay Zero tax on "+ak);
+			return 0;
+		}
+		else if(ak>52000 & ak < 1000000) {
+			System.out.println("You have to pay 20 percent tax on "+ak);
+			return (ak*20/100);
+		}
+		else{
+			System.out.println("You have to pay 30 percent tax on "+ak);
+			return (ak*30/100);
+		}
+
