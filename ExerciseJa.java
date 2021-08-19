@@ -123,3 +123,34 @@ public class PracticeSet_1 {
 
 }
 
+import java.util.*;
+public class PracticeSet_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			Scanner np = new Scanner(System.in);
+			System.out.println("Give me A String : ");
+			String A = np.nextLine();
+			
+			//System.out.println("Give me A Char : ");
+			//char b = np.next().charAt(0);
+			
+			for(int i = 0 ;i<A.length();i++) {
+				if(A.charAt(i) == A.charAt(i)) {
+					System.out.println(A.charAt(i) + " at "+i);
+				}
+			}
+			
+			char[] arr1 = new  char[5];
+			for(int i=0;i<A.length();i++) {
+				arr1[i] = A.charAt(i);
+			}
+			System.out.println();
+			
+			for(int i=0 ; i<arr1.length;i++) {
+				System.out.println(arr1[i]);
+			}
+	}
+
+}
+
