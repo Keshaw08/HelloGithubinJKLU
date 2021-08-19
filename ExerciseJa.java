@@ -91,3 +91,35 @@ public class ArrayDeletion {
 	}
 
 }
+
+import java.util.*;
+public class PracticeSet_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner np = new Scanner(System.in);
+		System.out.println("list the Marks in all the subjects ");
+		double a = np.nextDouble();
+		double b = np.nextDouble();
+		double c = np.nextDouble();
+		double d = np.nextDouble();
+		double e = np.nextDouble();
+		
+		double result;
+		
+		result = (a+b+c+d+e)/500 * 100;
+		System.out.println("RESULT : "+result+"%");
+		
+		System.out.println("CGPA : "+result*9.5/100);
+		
+		int ak;
+		if(Math.floor(a)==a) {
+			System.out.println(a + " is integer");
+		}
+		else {
+			System.out.println("not a integer ");
+		}
+	}
+
+}
+
