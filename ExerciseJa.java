@@ -50,3 +50,44 @@ public class ArrayInsertion_String {
 	}
 
 }
+
+
+import java.util.*;
+public class ArrayDeletion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i, size, pos,val;
+		int[] arr1 = new int[10];
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the Array");
+		size = sc.nextInt();
+		
+		System.out.println("Enter the values for Array");
+		for(i=0;i<size;i++) {
+			arr1[i] = sc.nextInt();
+		}
+		
+		for(i=0;i<size;i++) {
+			System.out.print(arr1[i] + " ");
+		}
+		
+		System.out.println("Enter the position you want to delete from");
+		pos = sc.nextInt();
+		
+		i = pos + 1;
+		while(i <= size) {
+			arr1[i-1] = arr1[i];
+			i++;
+		}
+		size = size - 1;
+		
+		System.out.println("Deletion succesfull");
+		System.out.println("New Array (after deletion)");
+		
+		for(i=0;i<size;i++) {
+			System.out.print(arr1[i] + " ");
+		}
+	}
+
+}
