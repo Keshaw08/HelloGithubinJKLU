@@ -217,3 +217,52 @@ public class ArraySearching {
 	}
 
 }
+
+
+import java.util.*;
+public class ArrayMerging {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of First Array");
+		int size1 = sc.nextInt();
+		System.out.println("Enter the size of Second Array");
+		int size2 = sc.nextInt();
+		int[] arr1 = new int[size1];
+		int[] arr2 = new int[size2];
+		System.out.println("Enter the values for First Array");
+		for(int i=0;i<size1;i++) {
+			arr1[i] = sc.nextInt();
+		}
+		System.out.println("Enter the values for Second Array");
+		for(int i=0;i<size2;i++) {
+			arr2[i] = sc.nextInt();
+		}
+		System.out.println("First Array : ");
+		for(int i=0;i<size1;i++) {
+			System.out.print(arr1[i] + " ");
+		}
+		System.out.println();
+		System.out.println("Second Array : ");
+		for(int i=0;i<size2;i++) {
+			System.out.print(arr2[i] + " ");
+		}
+		int[] arr3 = new int[arr1.length + arr2.length]; 
+		for(int i=0,k=0;i<arr1.length;i++) {
+			arr3[k] = arr1[i];
+			k++;
+		}
+		for(int j=0,k=arr1.length;k<(arr1.length + arr2.length);k++) {
+			arr3[k] = arr2[j];
+			j++;
+		}
+		
+		System.out.println();
+		System.out.println("New Array (after merging)");
+		for(int i=0;i<(arr1.length + arr2.length);i++) {
+			System.out.print(arr3[i] + " ");
+		}
+	}
+
+}
