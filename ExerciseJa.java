@@ -178,3 +178,42 @@ public static int income(int ak) {
 			System.out.println();
 		}
 
+
+
+import java.util.*;
+public class ArraySearching {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = new int[10];
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Size of Array");
+		int size = sc.nextInt();
+		System.out.println("Enter the Vales in the Array");
+		for(int i=0;i<size;i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int i=0;i<size;i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+		System.out.println("Enter the Value which you want to search");
+		int val = sc.nextInt();
+		
+		int i=0,count=0;
+		while(i<size) {
+			if(arr[i] == val) {
+				count++;
+			} 
+			i++;
+		}
+		
+		if(count == 0) {
+			System.out.println("The value is not in the Array");
+		}
+		else {
+			System.out.println("WE FOUND THE VALUE - " + val + " -> " +count + " TIMES");
+		}
+	}
+
+}
