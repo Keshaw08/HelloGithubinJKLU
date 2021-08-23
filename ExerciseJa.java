@@ -266,3 +266,66 @@ public class ArrayMerging {
 	}
 
 }
+
+import java.util.*;
+public class ArraySortedMerging_UserIP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of First Array");
+		int size1 = sc.nextInt();
+		System.out.println("Enter the size of Second Array");
+		int size2 = sc.nextInt();
+		int[] arr1 = new int[size1];
+		int[] arr2 = new int[size2];
+		System.out.println("Enter the values for First Array");
+		for(int i=0;i<size1;i++) {
+			arr1[i] = sc.nextInt();
+		}
+		System.out.println("Enter the values for Second Array");
+		for(int i=0;i<size2;i++) {
+			arr2[i] = sc.nextInt();
+		}
+		System.out.println("First Array : ");
+		for(int i=0;i<size1;i++) {
+			System.out.print(arr1[i] + " ");
+		}
+		System.out.println();
+		System.out.println("Second Array : ");
+		for(int i=0;i<size2;i++) {
+			System.out.print(arr2[i] + " ");
+		}
+		int[] arr3 = new int[arr1.length + arr2.length]; 
+		int i=0,j=0,k=0;
+		while(i < arr1.length && j < arr2.length) {
+			if(arr1[i] < arr2[j]) {
+				arr3[k] = arr1[i];
+				k++;
+				i++;
+			}
+			else {
+				arr3[k] = arr2[j];
+				k++;
+				j++;
+			}
+		}
+		
+		while(i < arr1.length) {
+			arr3[k] = arr1[i];
+			k++;
+			i++;
+		}
+		while(j < arr2.length) {
+			arr3[k] = arr2[j];
+			k++;
+			j++;
+		}
+		System.out.println();
+		System.out.println("Sorted Merged Arrary");
+		for(int l=0;l<arr3.length;l++) {
+			System.out.print(arr3[l] + " ");
+		}
+	}
+
+}
