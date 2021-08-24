@@ -329,3 +329,50 @@ public class ArraySortedMerging_UserIP {
 	}
 
 }
+
+import java.util.*;
+public class ArrayBinarySearching {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Size of Array");
+		int size = sc.nextInt();
+		int[] arr = new int[size];
+		System.out.println("Enter the values of Array (Ascending Order) ");
+		for(int i=0; i<arr.length;i++) {
+			arr[i] = sc.nextInt();
+		}
+		System.out.println();
+		System.out.println("The Array : ");
+		for(int i=0; i<arr.length;i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+		System.out.println("Enter the value you want to search in the array");
+		int val = sc.nextInt();
+		int first = 0;
+		int last = arr.length - 1;
+		int count = 0;
+		int mid = 0;
+		while(first <= last) {
+			mid = (first + last)/2;
+			if(arr[mid] == val) {
+				System.out.println("We found the number : "+val);
+				count++;
+				break;
+			}
+			if(arr[mid] > val) {
+				last = mid - 1;
+			}
+			if(arr[mid] < val) {
+				first = mid + 1;
+			}
+		}
+		if(count == 0) {
+			System.out.println(val + " is not in the Array");
+		}
+	}
+
+}
+
