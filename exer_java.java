@@ -443,6 +443,7 @@ class mycircle{
 		Bcircle = new circle(20,30,10);
 		Ccircle = new circle();
 		Dcircle = new circle(15,6);
+		System.out.println();
 		System.out.println("area : "+Acircle.area());
 		System.out.println("circumferrence : " + Acircle.circum());
 		System.out.println("area of Bcircle : "+Bcircle.area());
